@@ -1,0 +1,342 @@
+.donatePage {
+  background-color: var(--background-primary);
+}
+
+/* Page Header */
+.pageHeader {
+  position: relative;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #0f172a 100%);
+  color: var(--text-white);
+  padding: 80px 0;
+  text-align: center;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 850;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Two Column Layout */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Sponsor Options */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.sponsorCategory {
+  margin-bottom: 40px;
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}
+
+.categoryTitle {
+  font-size: 1.4rem;
+  font-weight: 750;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .optionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.optionCard {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-md);
+  padding: 24px;
+  border: 2px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.optionCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.selectedCard {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-glow);
+  background-color: var(--primary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  .selectedCard {
+    background-color: rgba(200, 75, 75, 0.1);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 750;
+}
+
+.cardAmount {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Calculator Panel */
+.stickyPanel {
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panelTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.panelIntro {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.summaryList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.summaryLabel {
+  font-weight: 600;
+}
+
+.summaryValue {
+  font-weight: 750;
+  color: var(--primary-color);
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 850;
+  padding-top: 12px;
+  border-top: 2px solid var(--border-color);
+}
+
+.totalValue {
+  color: var(--primary-color);
+}
+
+.actionButton {
+  margin-top: 12px;
+}
+
+/* Wishlist Section */
+.wishlistSection {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wishlistGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .wishlistGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .wishlistGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wishlistCard {
+  background-color: var(--background-primary);
+  border-radius: var(--border-radius-md);
+  padding: 30px;
+  border: 1px solid var(--border-color);
+}
+
+.wishlistTitle {
+  font-size: 1.25rem;
+  font-weight: 750;
+  margin-bottom: 16px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.itemDetail {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 6px;
+}
+
+/* Bank Details section */
+.bankSection {
+  background-color: var(--background-primary);
+}
+
+.bankGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .bankGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bankCard {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bankCardTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.bankBadge {
+  background-color: var(--accent-color);
+  color: var(--text-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  text-transform: uppercase;
+}
+
+.bankBadgeForeign {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  text-transform: uppercase;
+}
+
+.bankDetailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bankDetailRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bankLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  letter-spacing: 0.05em;
+}
+
+.bankValue {
+  font-size: 1.1rem;
+  font-weight: 650;
+  color: var(--text-primary);
+}

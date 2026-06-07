@@ -1,0 +1,230 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast), height var(--transition-fast);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.scrolled {
+  height: 70px;
+  box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  .scrolled {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.8);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.logoImage {
+  object-fit: contain;
+  height: 44px;
+  width: auto;
+}
+
+.logoDivider {
+  width: 1.5px;
+  height: 32px;
+  background-color: var(--border-color);
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandName {
+  font-family: var(--font-family-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.subBrand {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.navLink {
+  font-family: var(--font-family-heading);
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--text-secondary);
+  padding: 8px 0;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width var(--transition-fast);
+}
+
+.navLink:hover::after,
+.active::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+.ctaContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: var(--border-radius-full);
+  transition: all var(--transition-fast);
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* Responsive breakpoint */
+@media (max-width: 992px) {
+  .desktopNav,
+  .ctaContainer,
+  .logoDivider,
+  .logoText .subBrand {
+    display: none;
+  }
+
+  .logoText .brandName {
+    font-size: 1.15rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hamburger Active Animation */
+  .hamburgerActive .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburgerActive .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerActive .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .mobileMenu {
+    display: block;
+    position: absolute;
+    top: calc(var(--header-height) - 10px);
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    transition: max-height var(--transition-normal), opacity var(--transition-normal);
+    z-index: 999;
+  }
+
+  .mobileMenuActive {
+    max-height: 400px;
+    opacity: 1;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    margin-top: 10px;
+  }
+
+  .mobileNavList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mobileNavLink {
+    font-family: var(--font-family-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .mobileNavLink:hover,
+  .mobileActive {
+    color: var(--primary-color);
+    padding-left: 8px;
+  }
+
+  .mobileCtaLi {
+    margin-top: 16px;
+  }
+}
