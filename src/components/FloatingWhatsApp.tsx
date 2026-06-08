@@ -1,7 +1,7 @@
 import styles from "./FloatingWhatsApp.module.css";
 
 export default function FloatingWhatsApp() {
-  const waUrl = "https://wa.me/919207340595?text=Hello%20Snehatheeram%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services%20and%20how%20I%20can%20help.";
+  const waUrl = "https://wa.me/917907123615?text=Hello%20Snehatheeram%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services%20and%20how%20I%20can%20help.";
 
   return (
     <a
