@@ -118,8 +118,8 @@ export default function Contact() {
 
         const waUrl = `https://wa.me/9179077123615?text=${encodeURIComponent(waText)}`;
         
-        // Open WhatsApp in a new tab
-        window.open(waUrl, "_blank");
+        // Directly redirect to WhatsApp number in the same tab
+        window.location.href = waUrl;
 
         setIsSubmitted(true);
         setFormData({
