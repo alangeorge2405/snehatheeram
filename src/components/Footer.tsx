@@ -35,6 +35,24 @@ export default function Footer() {
                 Instagram
               </a>
               <a
+                href="https://www.facebook.com/SnehatheeramCamillians"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
+                className={styles.socialIcon}
+              >
+                Facebook
+              </a>
+              <a
+                href="https://www.threads.net/@snehatheeramcamillians"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Threads"
+                className={styles.socialIcon}
+              >
+                Threads
+              </a>
+              <a
                 href="http://camilliansindia.org/"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -294,6 +294,17 @@ export default function Contact() {
                   Sunday: Closed (Except emergencies)
                 </span>
               </div>
+
+              <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Social Media Pages</span>
+                <span className={styles.infoValue} style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "4px" }}>
+                  <a href="https://www.instagram.com/snehatheeramcamillians/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Instagram</a>
+                  <span>•</span>
+                  <a href="https://www.facebook.com/SnehatheeramCamillians" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Facebook</a>
+                  <span>•</span>
+                  <a href="https://www.threads.net/@snehatheeramcamillians" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Threads</a>
+                </span>
+              </div>
             </div>
 
             {/* Map representation */}
