@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import HeroBanner from "@/components/HeroBanner";
 
 export default function Home() {
   return (
@@ -24,14 +25,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImageContainer}>
-            <Image
-              src="/images/snehatheeram_aluva.jpg"
-              alt="Snehatheeram St. Camillus Care Home Aluva"
-              width={600}
-              height={400}
-              className={styles.heroImage}
-              priority
-            />
+            <HeroBanner />
           </div>
         </div>
       </section>
