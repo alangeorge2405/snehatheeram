@@ -45,14 +45,25 @@ export default function About() {
       {/* Charism section */}
       <section className={`${styles.charismSection} section`}>
         <div className={`${styles.gridTwoCol} container`}>
-          <div className={styles.imageCard}>
-            <Image
-              src="/images/st_camillus.png"
-              alt="Portrait of St. Camillus de Lellis"
-              width={600}
-              height={450}
-              className={styles.cardImg}
-            />
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            <div className={styles.imageCard}>
+              <Image
+                src="/images/st_camillus.png"
+                alt="Portrait of St. Camillus de Lellis"
+                width={600}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "var(--border-radius-md)", border: "1px solid var(--border-color)", boxShadow: "var(--shadow-sm)" }}>
+              <iframe
+                src="https://www.youtube.com/embed/uioFKI7PqCI"
+                title="Saint Camillus de Lellis Video"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <div className={styles.charismBox}>
             <span className={styles.sectionLabel}>The Camillian Charism</span>
