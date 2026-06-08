@@ -194,6 +194,40 @@ export default function Services() {
               />
             </div>
           </div>
+
+          {/* Service 6: Ambulance Services */}
+          <div id="ambulance" className={styles.serviceCard}>
+            <div className={styles.content}>
+              <span className={styles.categoryTag}>Emergency support</span>
+              <h2 className={styles.serviceTitle}>Ambulance & Emergency Transport</h2>
+              <p className={styles.description}>
+                Snehatheeram operates a dedicated ambulance service to provide prompt, safe, and comfortable medical transit for our residents and palliative outreach patients who require urgent or routine hospital care.
+              </p>
+              <ul className={styles.featuresList}>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Emergency Response:</strong> 24/7 medical transport for residents facing critical health updates or acute clinical emergencies.
+                </li>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Hospital Transfers:</strong> Scheduled transit to regional hospitals, clinics, and diagnostics centers for consultations, dialysis, or therapies.
+                </li>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Palliative Transit:</strong> Assisting mobility-challenged and bedridden palliative patients under our home care network.
+                </li>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Charitable Operation:</strong> Provided completely free of charge to all destitute seniors, terminally ill, and underprivileged patients.
+                </li>
+              </ul>
+            </div>
+            <div className={styles.imageContainer}>
+              <Image
+                src="/images/ambulance_service.png"
+                alt="Ambulance and Patient Transport Services"
+                width={500}
+                height={350}
+                className={styles.serviceImage}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

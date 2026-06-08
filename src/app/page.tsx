@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           <div className={styles.pillarsGrid}>
             {/* Pillar 1: Hair Donation */}
-            <div className={styles.pillarCardFullWidth}>
+            <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>✂</div>
               <h3 className={styles.pillarTitle}>&quot;Kesadhanam&quot; Hair Donation</h3>
               <p className={styles.pillarDescription}>
@@ -171,6 +171,18 @@ export default function Home() {
                 Offering professional individual, family, and group therapy sessions. Our clinical psychologists support residents in overcoming emotional trauma, depression, and social rejection.
               </p>
               <Link href="/services#counseling" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>
+
+            {/* Pillar 6: Ambulance Services */}
+            <div className={styles.pillarCard}>
+              <div className={styles.pillarIconContainer}>🚑</div>
+              <h3 className={styles.pillarTitle}>Ambulance Services</h3>
+              <p className={styles.pillarDescription}>
+                We run a dedicated ambulance service providing safe, urgent, and routine patient transit to regional hospitals for residents and home care patients.
+              </p>
+              <Link href="/services#ambulance" className={styles.pillarLink}>
                 Learn More <span>→</span>
               </Link>
             </div>
