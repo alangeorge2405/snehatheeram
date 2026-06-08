@@ -77,7 +77,7 @@ export default function Services() {
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/slide_bg.jpg"
+                src="/images/plhiv_support.png"
                 alt="PLHIV Support and Medical Care"
                 width={500}
                 height={350}

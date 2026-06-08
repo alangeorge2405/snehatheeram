@@ -18,7 +18,7 @@ export default function Donate() {
         <div className="container" style={{ maxWidth: "800px", textAlign: "center" }}>
           <h2 className={styles.sectionTitle}>Current Strength & Expenses</h2>
           <p className={styles.panelIntro} style={{ fontSize: "1.15rem", lineHeight: "1.8", color: "var(--text-secondary)" }}>
-            Snehatheeram currently provides residential care for **12 residents**. Including our dedicated nursing, cooking, and administrative staff, the total strength of our household is **15 to 17 people** daily.
+            Snehatheeram currently provides residential care for <strong>12 residents</strong>. Including our dedicated nursing, cooking, and administrative staff, the total strength of our household is <strong>15 to 17 people</strong> daily.
           </p>
           
           <div className={styles.optionsGrid} style={{ marginTop: "40px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "30px" }}>

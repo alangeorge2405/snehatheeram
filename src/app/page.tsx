@@ -44,7 +44,7 @@ export default function Home() {
           <span className={styles.sectionSubtitle}>Who We Are</span>
           <h2 className={styles.sectionTitle}>Restoring Hope & Well-being</h2>
           <p className={styles.missionText}>
-            Established in 2004 under the **Sneha Charitable Trust**, Snehatheeram embodies the mission of the **Camillian Order** in India. Our sanctuary serves as a safe haven where the sick, terminally ill, and destitute find not just clinical care, but a family. Guided by the values of compassionate service, we aim to eliminate social stigma and ensure every individual lives their life in comfort and dignity.
+            Established in 2004 under the <strong>Sneha Charitable Trust</strong>, Snehatheeram embodies the mission of the <strong>Camillian Order</strong> in India. Our sanctuary serves as a safe haven where the sick, terminally ill, and destitute find not just clinical care, but a family. Guided by the values of compassionate service, we aim to eliminate social stigma and ensure every individual lives their life in comfort and dignity.
           </p>
           <Link href="/about" className="btn btn-secondary" style={{ marginTop: "12px" }}>
             Read Our History
