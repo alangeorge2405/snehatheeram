@@ -115,7 +115,19 @@ export default function Home() {
             <h2 className={styles.sectionTitle}>Our Core Pillars of Care</h2>
           </div>
           <div className={styles.pillarsGrid}>
-            {/* Pillar 1 */}
+            {/* Pillar 1: Hair Donation */}
+            <div className={styles.pillarCardFullWidth}>
+              <div className={styles.pillarIconContainer}>✂</div>
+              <h3 className={styles.pillarTitle}>&quot;Kesadhanam&quot; Hair Donation</h3>
+              <p className={styles.pillarDescription}>
+                In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva and hands them over to Amala Hospital, where they are crafted and distributed as natural wigs to cancer patients.
+              </p>
+              <Link href="/services#hair-donation" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>
+
+            {/* Pillar 2: Elderly Care */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>❤</div>
               <h3 className={styles.pillarTitle}>Elderly & Destitute Care</h3>
@@ -127,7 +139,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Pillar 2 */}
+            {/* Pillar 3: PLHIV Support */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>✚</div>
               <h3 className={styles.pillarTitle}>PLHIV Support & Rehabilitation</h3>
@@ -139,7 +151,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Pillar 3 */}
+            {/* Pillar 4: NANMA Outreach */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>🤝</div>
               <h3 className={styles.pillarTitle}>&quot;NANMA&quot; Outreach Program</h3>
@@ -151,7 +163,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Pillar 4 */}
+            {/* Pillar 5: Counseling */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>🗣</div>
               <h3 className={styles.pillarTitle}>Psychological Counseling</h3>
@@ -159,18 +171,6 @@ export default function Home() {
                 Offering professional individual, family, and group therapy sessions. Our clinical psychologists support residents in overcoming emotional trauma, depression, and social rejection.
               </p>
               <Link href="/services#counseling" className={styles.pillarLink}>
-                Learn More <span>→</span>
-              </Link>
-            </div>
-
-            {/* Pillar 5 */}
-            <div className={styles.pillarCardFullWidth}>
-              <div className={styles.pillarIconContainer}>✂</div>
-              <h3 className={styles.pillarTitle}>&quot;Kesadhanam&quot; Hair Donation</h3>
-              <p className={styles.pillarDescription}>
-                In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva and hands them over to Amala Hospital, where they are crafted and distributed as natural wigs to cancer patients.
-              </p>
-              <Link href="/services#hair-donation" className={styles.pillarLink}>
                 Learn More <span>→</span>
               </Link>
             </div>
