@@ -168,7 +168,7 @@ export default function Home() {
               <div className={styles.pillarIconContainer}>✂</div>
               <h3 className={styles.pillarTitle}>&quot;Kesadhanam&quot; Hair Donation</h3>
               <p className={styles.pillarDescription}>
-                We run a dedicated campaign collecting hair donations to manufacture natural-hair wigs for cancer patients undergoing chemotherapy, helping restore their confidence, hope, and dignity.
+                In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva and hands them over to Amala Hospital, where they are crafted and distributed as natural wigs to cancer patients.
               </p>
               <Link href="/services#hair-donation" className={styles.pillarLink}>
                 Learn More <span>→</span>

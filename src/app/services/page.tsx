@@ -160,20 +160,20 @@ export default function Services() {
               <span className={styles.categoryTag}>Kesadhanam Drive</span>
               <h2 className={styles.serviceTitle}>Kesadhanam (Hair Donation)</h2>
               <p className={styles.description}>
-                To restore hope and dignity to cancer survivors, Snehatheeram facilitates the <strong>Kesadhanam Hair Donation Program</strong>. Donated hair is processed and crafted into premium, natural-hair wigs, which are then distributed entirely free of cost to terminally ill cancer patients undergoing chemotherapy.
+                To support cancer survivors in their healing journey, Snehatheeram facilitates the <strong>Kesadhanam Hair Donation Program</strong> in collaboration with <strong>Amala Hospital, Thrissur</strong>. Snehatheeram acts as the collection hub in Aluva, gathering healthy hair donations and handing them over to Amala Hospital, where they are crafted into custom natural wigs and distributed to cancer patients undergoing chemotherapy.
               </p>
               <ul className={styles.featuresList}>
                 <li className={styles.featureItem}>
-                  <span className={styles.bullet}>✓</span> <strong>Restoring Confidence:</strong> Helping cancer patients overcome the psychological trauma of hair loss.
+                  <span className={styles.bullet}>✓</span> <strong>Amala Hospital Collaboration:</strong> A joint venture between Snehatheeram (Camillians, Aluva) and Amala Hospital (Thrissur) to support cancer care.
                 </li>
                 <li className={styles.featureItem}>
-                  <span className={styles.bullet}>✓</span> <strong>Free Wig Distribution:</strong> Gifting custom-made natural wigs to patients who cannot afford them.
+                  <span className={styles.bullet}>✓</span> <strong>Local Collection:</strong> We collect the hair donations at our Aluva center and deliver them to Amala Hospital for wig manufacturing.
                 </li>
                 <li className={styles.featureItem}>
-                  <span className={styles.bullet}>✓</span> <strong>Donation Guidelines:</strong> Accept healthy hair with a minimum length of 10 inches, washed, dried, and tied in braids.
+                  <span className={styles.bullet}>✓</span> <strong>Hospital Distribution:</strong> Wigs are distributed directly to cancer patients undergoing chemotherapy at Amala Hospital.
                 </li>
                 <li className={styles.featureItem}>
-                  <span className={styles.bullet}>✓</span> <strong>Community Partnership:</strong> Collaborating with local salons, schools, and colleges for organized hair collection drives.
+                  <span className={styles.bullet}>✓</span> <strong>Donation Guidelines:</strong> We accept clean, dry, and healthy hair with a minimum length of 10 inches, secured in a ponytail or braid.
                 </li>
               </ul>
             </div>
