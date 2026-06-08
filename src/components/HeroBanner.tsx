@@ -10,6 +10,10 @@ const images = [
     alt: "Snehatheeram Care Home Aluva Building",
   },
   {
+    src: "/images/banner_chapel.jpg",
+    alt: "Snehatheeram Chapel Community Prayer",
+  },
+  {
     src: "/images/banner_altar.jpg",
     alt: "Holy Mass Altar Service at Snehatheeram Chapel",
   },
