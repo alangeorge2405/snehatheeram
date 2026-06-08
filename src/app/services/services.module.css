@@ -186,3 +186,34 @@
   color: var(--text-secondary);
   line-height: 1.6;
 }
+
+/* Hair donation image grid */
+.imageGridTwoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  height: 350px;
+}
+
+.gridImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-normal);
+}
+
+.gridImage:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 992px) {
+  .imageGridTwoCol {
+    height: 280px;
+    gap: 12px;
+  }
+}
+

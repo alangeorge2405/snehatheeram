@@ -162,6 +162,18 @@ export default function Home() {
                 Learn More <span>→</span>
               </Link>
             </div>
+
+            {/* Pillar 5 */}
+            <div className={styles.pillarCardFullWidth}>
+              <div className={styles.pillarIconContainer}>✂</div>
+              <h3 className={styles.pillarTitle}>&quot;Kesadhanam&quot; Hair Donation</h3>
+              <p className={styles.pillarDescription}>
+                We run a dedicated campaign collecting hair donations to manufacture natural-hair wigs for cancer patients undergoing chemotherapy, helping restore their confidence, hope, and dignity.
+              </p>
+              <Link href="/services#hair-donation" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

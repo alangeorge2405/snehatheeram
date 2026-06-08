@@ -153,6 +153,47 @@ export default function Services() {
               />
             </div>
           </div>
+
+          {/* Service 5: Hair Donation */}
+          <div id="hair-donation" className={styles.serviceCard}>
+            <div className={styles.content}>
+              <span className={styles.categoryTag}>Kesadhanam Drive</span>
+              <h2 className={styles.serviceTitle}>Kesadhanam (Hair Donation)</h2>
+              <p className={styles.description}>
+                To restore hope and dignity to cancer survivors, Snehatheeram facilitates the <strong>Kesadhanam Hair Donation Program</strong>. Donated hair is processed and crafted into premium, natural-hair wigs, which are then distributed entirely free of cost to terminally ill cancer patients undergoing chemotherapy.
+              </p>
+              <ul className={styles.featuresList}>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Restoring Confidence:</strong> Helping cancer patients overcome the psychological trauma of hair loss.
+                </li>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Free Wig Distribution:</strong> Gifting custom-made natural wigs to patients who cannot afford them.
+                </li>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Donation Guidelines:</strong> Accept healthy hair with a minimum length of 10 inches, washed, dried, and tied in braids.
+                </li>
+                <li className={styles.featureItem}>
+                  <span className={styles.bullet}>✓</span> <strong>Community Partnership:</strong> Collaborating with local salons, schools, and colleges for organized hair collection drives.
+                </li>
+              </ul>
+            </div>
+            <div className={styles.imageGridTwoCol}>
+              <Image
+                src="/images/hair_donation.png"
+                alt="Beautifully braided lock of donated hair"
+                width={250}
+                height={350}
+                className={styles.gridImage}
+              />
+              <Image
+                src="/images/hair_cutting.png"
+                alt="Hair cutting session for cancer support donation"
+                width={250}
+                height={350}
+                className={styles.gridImage}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

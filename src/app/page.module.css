@@ -403,3 +403,28 @@
   color: var(--primary-color);
   letter-spacing: 0.05em;
 }
+
+.pillarCardFullWidth {
+  background-color: var(--background-primary);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all var(--transition-normal);
+}
+
+.pillarCardFullWidth:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+@media (min-width: 993px) {
+  .pillarCardFullWidth {
+    grid-column: span 2;
+  }
+}
+
