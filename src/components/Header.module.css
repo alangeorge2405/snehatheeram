@@ -152,14 +152,25 @@
 /* Responsive breakpoint */
 @media (max-width: 992px) {
   .desktopNav,
-  .ctaContainer,
-  .logoDivider,
-  .logoText .subBrand {
+  .ctaContainer {
     display: none;
   }
 
+  .logoContainer {
+    gap: 10px;
+  }
+
+  .logoDivider {
+    height: 24px;
+  }
+
+  .logoText .subBrand {
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+  }
+
   .logoText .brandName {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
   .hamburger {
