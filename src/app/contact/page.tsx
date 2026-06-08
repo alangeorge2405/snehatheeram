@@ -116,7 +116,7 @@ export default function Contact() {
           `• *Subject:* ${formData.subject}\n\n` +
           `*Message:*\n${formData.message}`;
 
-        const waUrl = `https://wa.me/9179077123615?text=${encodeURIComponent(waText)}`;
+        const waUrl = `https://wa.me/919205340595?text=${encodeURIComponent(waText)}`;
         
         // Directly redirect to WhatsApp number in the same tab
         window.location.href = waUrl;
