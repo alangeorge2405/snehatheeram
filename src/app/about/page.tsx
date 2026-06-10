@@ -139,18 +139,18 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_antony.jpeg"
-                  alt="Fr. Antony Kunnel MI"
+                  src="/images/fr_teji.jpeg"
+                  alt="Fr. Teji Thomas Anickattuvayalil MI"
                   width={400}
                   height={250}
                   className={styles.teamImg}
                 />
               </div>
               <div className={styles.teamMeta}>
-                <h3 className={styles.teamName}>Fr. Antony Kunnel MI</h3>
-                <span className={styles.teamRole}>Provincial & Trustee</span>
+                <h3 className={styles.teamName}>Fr. Teji Thomas Anickattuvayalil MI</h3>
+                <span className={styles.teamRole}>Director, Snehatheeram</span>
                 <p className={styles.teamBio}>
-                  Oversees the strategic directions, administrative guidelines, and spiritual coordinates of the Camillian Order ministries across India.
+                  Manages the overall strategic operations, resident admissions, clinical coordinates, and community collaborations for Snehatheeram Aluva.
                 </p>
               </div>
             </div>
@@ -159,18 +159,18 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_joy.jpeg"
-                  alt="Fr. Joy Joseph MI"
+                  src="/images/fr_vince.jpeg"
+                  alt="Fr. Vince Koyikkal MI"
                   width={400}
                   height={250}
                   className={styles.teamImg}
                 />
               </div>
               <div className={styles.teamMeta}>
-                <h3 className={styles.teamName}>Fr. Joy Joseph MI</h3>
-                <span className={styles.teamRole}>Director & Administrator</span>
+                <h3 className={styles.teamName}>Fr. Vince Koyikkal MI</h3>
+                <span className={styles.teamRole}>Administrator, Snehatheeram</span>
                 <p className={styles.teamBio}>
-                  Manages the day-to-day administrative execution, residential assignments, and medical supplies network for Snehatheeram Aluva.
+                  Directs day-to-day facility administration, logistical operations, human resources, and material supply networks for the care home.
                 </p>
               </div>
             </div>
