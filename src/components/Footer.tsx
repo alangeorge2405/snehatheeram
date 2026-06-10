@@ -113,9 +113,14 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottomBar}>
-          <p className={styles.copyright}>
-            &copy; {currentYear} Snehatheeram St. Camillus Care Home. All Rights Reserved. Managed under Sneha Charitable Trust.
-          </p>
+          <div>
+            <p className={styles.copyright}>
+              &copy; {currentYear} Snehatheeram St. Camillus Care Home. All Rights Reserved. Managed under Sneha Charitable Trust.
+            </p>
+            <p style={{ fontSize: "0.8rem", color: "#cbd5e1", marginTop: "6px" }}>
+              Designed and Developed by <a href="https://alanova.ai" target="_blank" rel="noopener noreferrer" style={{ color: "var(--primary-color)", fontWeight: "600", textDecoration: "underline" }}>Alanova.ai</a>
+            </p>
+          </div>
           <p className={styles.author}>
             In Service of the Sick & Destitute
           </p>
