@@ -10,7 +10,7 @@ export default function Home() {
       <section className={`${styles.hero} animate-fade-in`}>
         <div className={`${styles.heroContainer} container`}>
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Snehatheeram-Sneha Charitable Trust®</span>
+            <span className={styles.badge}>Snehatheeram- a unit of Sneha Charitable Trust®</span>
             <h1 className={styles.heroTitle}>A Shore of Love, Care & Dignity</h1>
             <p className={styles.heroSubtitle}>
               Snehatheeram (&quot;A Shore of Love&quot;) is a sanctuary dedicated to providing shelter, 24/7 medical care, emotional counseling, and rehabilitation to the elderly, destitute, and individuals living with HIV/AIDS.
