@@ -16,10 +16,7 @@ export default function Home() {
               Snehatheeram (&quot;A Shore of Love&quot;) is a sanctuary dedicated to providing shelter, 24/7 medical care, emotional counseling, and rehabilitation to the elderly, destitute, and individuals living with HIV/AIDS.
             </p>
             <div className={styles.heroCtas}>
-              <Link href="/donate" className="btn btn-primary">
-                Support Our Mission
-              </Link>
-              <Link href="/services" className="btn btn-outline">
+              <Link href="/services" className="btn btn-primary">
                 Our Care Programs
               </Link>
             </div>

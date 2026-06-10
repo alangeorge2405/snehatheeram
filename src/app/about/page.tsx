@@ -139,7 +139,7 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_antony.png"
+                  src="/images/fr_antony.jpeg"
                   alt="Fr. Antony Kunnel MI"
                   width={400}
                   height={250}
@@ -159,7 +159,7 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_joy.png"
+                  src="/images/fr_joy.jpeg"
                   alt="Fr. Joy Joseph MI"
                   width={400}
                   height={250}
