@@ -99,8 +99,9 @@ export default function Footer() {
             <div className={styles.contactItem}>
               <strong>Phone:</strong>
               <p>
-                <a href="tel:+914842607777">+91 484 2607777</a><br />
-                <a href="tel:+919886570340">+91 9886570340</a>
+                Landline: <a href="tel:+914842607777">+91 484 2607777</a><br />
+                Fr. Teji: <a href="tel:+919961153528">+91 9961153528</a><br />
+                Fr. Vince: <a href="tel:+917012160545">+91 7012160545</a>
               </p>
             </div>
             <div className={styles.contactItem}>
