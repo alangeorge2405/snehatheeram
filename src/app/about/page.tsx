@@ -128,8 +128,8 @@ export default function About() {
       <section className={`${styles.leadershipSection} section`}>
         <div className="container">
           <div className={styles.sectionTitleContainer}>
-            <span className={styles.sectionLabel}>Our Guardians</span>
-            <h2 className={styles.sectionTitle}>Trustees & Leadership</h2>
+            <span className={styles.sectionLabel}>Snehatheeram Leadership</span>
+            <h2 className={styles.sectionTitle}>Director & Administrator</h2>
             <p className={styles.paragraph} style={{ maxWidth: "600px", margin: "12px auto 0", textAlign: "center" }}>
               Snehatheeram is guided by the Camillian Fathers, who coordinate clinical, spiritual, and physical care networks.
             </p>
@@ -142,16 +142,13 @@ export default function About() {
                   src="/images/fr_teji.jpeg"
                   alt="Fr. Teji Thomas Anickattuvayalil MI"
                   width={400}
-                  height={250}
+                  height={350}
                   className={styles.teamImg}
                 />
               </div>
               <div className={styles.teamMeta}>
                 <h3 className={styles.teamName}>Fr. Teji Thomas Anickattuvayalil MI</h3>
                 <span className={styles.teamRole}>Director, Snehatheeram</span>
-                <p className={styles.teamBio}>
-                  Manages the overall strategic operations, resident admissions, clinical coordinates, and community collaborations for Snehatheeram Aluva.
-                </p>
               </div>
             </div>
 
@@ -162,16 +159,13 @@ export default function About() {
                   src="/images/fr_vince.jpeg"
                   alt="Fr. Vince Koyikkal MI"
                   width={400}
-                  height={250}
+                  height={350}
                   className={styles.teamImg}
                 />
               </div>
               <div className={styles.teamMeta}>
                 <h3 className={styles.teamName}>Fr. Vince Koyikkal MI</h3>
                 <span className={styles.teamRole}>Administrator, Snehatheeram</span>
-                <p className={styles.teamBio}>
-                  Directs day-to-day facility administration, logistical operations, human resources, and material supply networks for the care home.
-                </p>
               </div>
             </div>
           </div>
