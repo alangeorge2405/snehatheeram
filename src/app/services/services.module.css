@@ -217,3 +217,106 @@
   }
 }
 
+/* Camillian Family Section */
+.camillianFamilySection {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 50px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.familyGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+@media (max-width: 992px) {
+  .camillianFamilySection {
+    padding: 30px;
+  }
+
+  .familyGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.quoteCard {
+  background: linear-gradient(135deg, var(--primary-light) 0%, rgba(200, 75, 75, 0.05) 100%);
+  border-left: 5px solid var(--primary-color);
+  padding: 22px 25px;
+  border-radius: var(--border-radius-md);
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+.quoteAuthor {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.joinUsBox {
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+  padding: 35px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.joinUsTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+}
+
+.joinUsText {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.bibleQuote {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 15px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.familyImageContainer {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.familyImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+

@@ -18,6 +18,71 @@ export default function Services() {
       {/* Services Breakdown */}
       <section className="container">
         <div className={styles.servicesContainer}>
+          {/* Camillian Family Section */}
+          <div className={styles.camillianFamilySection}>
+            <div className={styles.familyGrid}>
+              <div className={styles.content}>
+                <span className={styles.categoryTag}>Lay Association</span>
+                <h2 className={styles.serviceTitle}>Camillian Family – Snehatheeram, Aluva</h2>
+                
+                <p className={styles.description}>
+                  The Camillian Family is an association of lay people who share in the spirituality, charism, and mission of Saint Camillus de Lellis, the Patron Saint of the Sick, Hospitals, Nurses, and Health Care Workers. Inspired by his example of compassionate service, members seek to make present the healing love of Christ among those who suffer.
+                </p>
+                
+                <p className={styles.description}>
+                  The Camillian Family at Snehatheeram, Aluva is an active community of men and women committed to both spiritual growth and charitable service. Members reach out to the sick, elderly, and dying through visits, listening with compassion, offering spiritual support, and providing practical assistance whenever possible. They strive to be a sign of God&apos;s tenderness and mercy to those who are experiencing illness, loneliness, or distress.
+                </p>
+                
+                <p className={styles.description}>
+                  Each month, the members gather at Snehatheeram for prayer, reflection on the Word of God, formation in Camillian spirituality, and discussions on how to better serve those in need. These gatherings strengthen the bonds of friendship, faith, and service among the members and renew their commitment to the Camillian mission.
+                </p>
+
+                <p className={styles.description}>
+                  St. Camillus taught that the sick are the living image of Christ and should be served with love and reverence. His famous exhortation continues to inspire us:
+                </p>
+
+                <div className={styles.quoteCard}>
+                  &ldquo;Put more heart in those hands.&rdquo;
+                  <span className={styles.quoteAuthor}>— St. Camillus de Lellis</span>
+                </div>
+
+                <p className={styles.description}>
+                  This simple yet profound message reminds us that true care is not merely a task but an expression of love. Through prayer, presence, and service, the Camillian Family seeks to bring hope, comfort, and dignity to every person who suffers.
+                </p>
+              </div>
+
+              <div>
+                <div className={styles.familyImageContainer}>
+                  <Image
+                    src="/images/about_bg.jpg"
+                    alt="Camillian community family group photo at Snehatheeram, Aluva"
+                    width={600}
+                    height={300}
+                    className={styles.familyImage}
+                  />
+                </div>
+
+                <div className={styles.joinUsBox}>
+                  <h3 className={styles.joinUsTitle}>Join Us</h3>
+                  <p className={styles.joinUsText}>
+                    Are you looking to deepen your spiritual life, grow in the spirit of St. Camillus, and share the compassionate love of Jesus with the sick and dying?
+                  </p>
+                  <p className={styles.joinUsText}>
+                    We warmly invite you to become part of the Camillian Family at Snehatheeram. Together, we journey in faith, prayer, and service, discovering Christ in those who suffer and bringing His healing presence to the world.
+                  </p>
+                  <Link href="/contact" className="btn btn-primary w-100" style={{ textAlign: "center", display: "block", marginTop: "15px" }}>
+                    Contact Us to Join
+                  </Link>
+
+                  <div className={styles.bibleQuote}>
+                    &ldquo;As often as you did it to one of these least brothers and sisters of mine, you did it to me.&rdquo;
+                    <strong style={{ display: "block", marginTop: "5px", color: "var(--primary-color)" }}>— Matthew 25:40</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Service 1: Hair Donation */}
           <div id="hair-donation" className={styles.serviceCard}>
             <div className={styles.content}>
