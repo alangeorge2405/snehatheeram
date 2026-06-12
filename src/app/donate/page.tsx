@@ -45,6 +45,31 @@ export default function Donate() {
         </div>
       </section>
 
+      {/* Alternative Ways to Support Us */}
+      <section className="section" style={{ paddingTop: "0px", paddingBottom: "40px" }}>
+        <div className="container" style={{ maxWidth: "800px", textAlign: "center" }}>
+          <h2 className={styles.sectionTitle} style={{ fontSize: "1.75rem", marginBottom: "30px" }}>Alternative Ways to Support Us</h2>
+          
+          <div className={styles.optionsGrid}>
+            <div className={styles.optionCard} style={{ cursor: "default", padding: "30px", display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
+              <div style={{ fontSize: "2.5rem" }}>🙏</div>
+              <span className={styles.cardTitle} style={{ fontSize: "1.25rem" }}>Prayer Support</span>
+              <p className={styles.cardDesc} style={{ textAlign: "center", marginTop: "10px" }}>
+                Offer prayers for our mission. Your spiritual support helps sustain our community and guides our caregivers as they serve those in need.
+              </p>
+            </div>
+
+            <div className={styles.optionCard} style={{ cursor: "default", padding: "30px", display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
+              <div style={{ fontSize: "2.5rem" }}>🤝</div>
+              <span className={styles.cardTitle} style={{ fontSize: "1.25rem" }}>Volunteer Service</span>
+              <p className={styles.cardDesc} style={{ textAlign: "center", marginTop: "10px" }}>
+                Anyone can offer volunteering for our mission. Lend your time, skills, or professional expertise in healthcare, activities, or general care support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bank Transfer Details Section */}
       <section id="bank-details" className={`${styles.bankSection} section`}>
         <div className="container">
