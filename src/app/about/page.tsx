@@ -173,7 +173,7 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_jobin.jpeg"
+                  src="/images/fr_jobin_v2.jpeg"
                   alt="Dr. (Fr.) Jobin Anchupankil MI"
                   width={400}
                   height={450}
