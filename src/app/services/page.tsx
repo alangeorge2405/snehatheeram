@@ -52,13 +52,20 @@ export default function Services() {
               </div>
 
               <div>
-                <div className={styles.familyImageContainer}>
+                <div className={styles.imageGridTwoCol} style={{ marginBottom: "25px" }}>
                   <Image
-                    src="/images/about_bg.jpg"
-                    alt="Camillian community family group photo at Snehatheeram, Aluva"
-                    width={600}
-                    height={300}
-                    className={styles.familyImage}
+                    src="/images/camillian_family_group.jpeg"
+                    alt="Camillian Family members group photo at Snehatheeram, Aluva"
+                    width={300}
+                    height={350}
+                    className={styles.gridImage}
+                  />
+                  <Image
+                    src="/images/camillian_family_portraits.jpeg"
+                    alt="St. Camillus de Lellis portraits at Snehatheeram ceremony"
+                    width={300}
+                    height={350}
+                    className={styles.gridImage}
                   />
                 </div>
 
