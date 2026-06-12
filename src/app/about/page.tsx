@@ -142,7 +142,7 @@ export default function About() {
                   src="/images/fr_teji.jpeg"
                   alt="Fr. Teji Thomas Anickattuvayalil MI"
                   width={400}
-                  height={350}
+                  height={450}
                   className={styles.teamImg}
                 />
               </div>
@@ -159,7 +159,7 @@ export default function About() {
                   src="/images/fr_vince.jpeg"
                   alt="Fr. Vince Koyikkal MI"
                   width={400}
-                  height={350}
+                  height={450}
                   className={styles.teamImg}
                 />
               </div>
