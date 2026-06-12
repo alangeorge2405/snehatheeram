@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./donate.module.css";
 
 export default function Donate() {
@@ -76,7 +77,7 @@ export default function Donate() {
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <h2 className={styles.sectionTitle}>Bank Transfer Details</h2>
             <p className={styles.subtitle}>
-              Please perform a direct bank transfer (IMPS, NEFT, RTGS, or International Wire) to the accounts listed below. All accounts are managed under the Sneha Charitable Trust.
+              All bank transfers are managed under the Sneha Charitable Trust. To protect account details, the full account numbers are not published online. Please contact us directly to obtain transfer details.
             </p>
           </div>
           
@@ -98,10 +99,6 @@ export default function Donate() {
                 <div className={styles.bankDetailRow}>
                   <span className={styles.bankLabel}>Branch</span>
                   <span className={styles.bankValue}>Aluva Branch, Ernakulam, Kerala</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Account Number</span>
-                  <span className={styles.bankValue}>0022053000021481</span>
                 </div>
                 <div className={styles.bankDetailRow}>
                   <span className={styles.bankLabel}>IFSC Code</span>
@@ -129,10 +126,6 @@ export default function Donate() {
                   <span className={styles.bankValue}>Aluva Branch, Ernakulam, Kerala</span>
                 </div>
                 <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>FCRA Account Number</span>
-                  <span className={styles.bankValue}>0022053000099882</span>
-                </div>
-                <div className={styles.bankDetailRow}>
                   <span className={styles.bankLabel}>IFSC Code</span>
                   <span className={styles.bankValue}>SIBL0000022</span>
                 </div>
@@ -140,6 +133,31 @@ export default function Donate() {
                   *All international transactions must be made through this FCRA registered bank account in accordance with Indian regulations.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Connection and Volunteering Info Card */}
+          <div style={{
+            marginTop: "50px",
+            background: "linear-gradient(135deg, var(--background-secondary) 0%, rgba(200, 75, 75, 0.05) 100%)",
+            border: "2px solid var(--primary-color)",
+            borderRadius: "var(--border-radius-lg)",
+            padding: "40px",
+            textAlign: "center",
+            boxShadow: "var(--shadow-sm)"
+          }}>
+            <div style={{ fontSize: "2.5rem", marginBottom: "15px" }}>🤝</div>
+            <h3 style={{ fontSize: "1.4rem", fontWeight: "800", marginBottom: "15px", color: "var(--primary-color)" }}>Connect With Us</h3>
+            <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "var(--text-secondary)", maxWidth: "600px", margin: "0 auto 20px auto" }}>
+              For any volunteering service or any helping program or visit you can directly connect with snehatheeram care home.
+            </p>
+            <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
+              <Link href="/contact" className="btn btn-primary">
+                Contact & Find Us
+              </Link>
+              <a href="tel:+914842607777" className="btn btn-secondary">
+                Call Office
+              </a>
             </div>
           </div>
         </div>
