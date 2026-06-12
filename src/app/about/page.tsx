@@ -128,8 +128,8 @@ export default function About() {
       <section className={`${styles.leadershipSection} section`}>
         <div className="container">
           <div className={styles.sectionTitleContainer}>
-            <span className={styles.sectionLabel}>Snehatheeram Leadership</span>
-            <h2 className={styles.sectionTitle}>Director & Administrator</h2>
+            <span className={styles.sectionLabel}>Camillian Community</span>
+            <h2 className={styles.sectionTitle}>Leadership & Community Fathers</h2>
             <p className={styles.paragraph} style={{ maxWidth: "600px", margin: "12px auto 0", textAlign: "center" }}>
               Snehatheeram is guided by the Camillian Fathers, who coordinate clinical, spiritual, and physical care networks.
             </p>
@@ -166,6 +166,46 @@ export default function About() {
               <div className={styles.teamMeta}>
                 <h3 className={styles.teamName}>Fr. Vince Koyikkal MI</h3>
                 <span className={styles.teamRole}>Administrator, Snehatheeram</span>
+              </div>
+            </div>
+
+            {/* Trustee 3 */}
+            <div className={styles.teamCard}>
+              <div className={styles.teamImgWrapper}>
+                <Image
+                  src="/images/fr_jobin.jpeg"
+                  alt="Dr. (Fr.) Jobin Anchupankil MI"
+                  width={400}
+                  height={450}
+                  className={styles.teamImg}
+                />
+              </div>
+              <div className={styles.teamMeta}>
+                <h3 className={styles.teamName}>Dr. (Fr.) Jobin Anchupankil MI</h3>
+                <span className={styles.teamRole}>
+                  Consultant Doctor — Community Health Medicine,<br />
+                  Jubilee Mission Hospital, Thrissur
+                </span>
+              </div>
+            </div>
+
+            {/* Trustee 4 */}
+            <div className={styles.teamCard}>
+              <div className={styles.teamImgWrapper}>
+                <Image
+                  src="/images/fr_justin.jpeg"
+                  alt="Fr. Justin Kalarpara MI"
+                  width={400}
+                  height={450}
+                  className={styles.teamImg}
+                />
+              </div>
+              <div className={styles.teamMeta}>
+                <h3 className={styles.teamName}>Fr. Justin Kalarpara MI</h3>
+                <span className={styles.teamRole}>
+                  Asst. Vicar,<br />
+                  St. Thomas Cathedral, Irinjalakuda
+                </span>
               </div>
             </div>
           </div>
