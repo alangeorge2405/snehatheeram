@@ -13,9 +13,9 @@ export default function Footer() {
           <div className={styles.infoCol}>
             <div className={styles.logoRow}>
               <Image
-                src="/images/camillus_crest.jpg"
-                alt="Camillian Crest"
-                width={36}
+                src="/images/snehatheeram_logo.png"
+                alt="Snehatheeram Logo"
+                width={54}
                 height={36}
                 className={styles.footerLogo}
               />

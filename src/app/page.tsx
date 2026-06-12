@@ -32,9 +32,9 @@ export default function Home() {
         <div className={`${styles.missionContent} container`}>
           <div className={styles.crestIcon}>
             <Image
-              src="/images/camillus_crest.jpg"
-              alt="Camillian Cross Crest"
-              width={60}
+              src="/images/snehatheeram_logo.png"
+              alt="Snehatheeram Logo"
+              width={90}
               height={60}
             />
           </div>

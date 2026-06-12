@@ -21,7 +21,7 @@ export default function Donate() {
           <p className={styles.panelIntro} style={{ fontSize: "1.15rem", lineHeight: "1.8", color: "var(--text-secondary)" }}>
             Snehatheeram currently provides residential care for <strong>12 residents</strong>. Including our dedicated nursing, cooking, and administrative staff, the total strength of our household is <strong>15 to 17 people</strong> daily.
           </p>
-          
+
           <div className={styles.optionsGrid} style={{ marginTop: "40px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "30px" }}>
             <div className={styles.optionCard} style={{ cursor: "default", padding: "30px", border: "2px solid var(--primary-color)" }}>
               <div className={styles.cardHeader} style={{ justifyContent: "center", flexDirection: "column", gap: "10px" }}>
@@ -49,8 +49,8 @@ export default function Donate() {
       {/* Alternative Ways to Support Us */}
       <section className="section" style={{ paddingTop: "0px", paddingBottom: "40px" }}>
         <div className="container" style={{ maxWidth: "800px", textAlign: "center" }}>
-          <h2 className={styles.sectionTitle} style={{ fontSize: "1.75rem", marginBottom: "30px" }}>Alternative Ways to Support Us</h2>
-          
+          <h2 className={styles.sectionTitle} style={{ fontSize: "1.75rem", marginBottom: "30px" }}>Ways to Support Us</h2>
+
           <div className={styles.optionsGrid}>
             <div className={styles.optionCard} style={{ cursor: "default", padding: "30px", display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
               <div style={{ fontSize: "2.5rem" }}>🙏</div>
@@ -85,7 +85,7 @@ export default function Donate() {
             <div style={{ fontSize: "2.5rem", marginBottom: "15px" }}>🤝</div>
             <h3 style={{ fontSize: "1.4rem", fontWeight: "800", marginBottom: "15px", color: "var(--primary-color)" }}>Connect With Us</h3>
             <p style={{ fontSize: "1.1rem", lineHeight: "1.7", color: "var(--text-secondary)", maxWidth: "600px", margin: "0 auto 20px auto" }}>
-              For any volunteering service or any helping program or visit you can directly connect with snehatheeram care home.
+              For volunteering services, support programs, or care visits, please feel free to connect directly with Snehatheeram Care Home
             </p>
             <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/contact" className="btn btn-primary">

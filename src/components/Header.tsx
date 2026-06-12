@@ -38,10 +38,10 @@ export default function Header() {
       <div className={`${styles.container} container`}>
         <Link href="/" className={styles.logoContainer} onClick={() => setIsOpen(false)}>
           <Image
-            src="/images/camillus_logo.jpg"
-            alt="St. Camillus Logo"
-            width={160}
-            height={50}
+            src="/images/snehatheeram_logo.png"
+            alt="Snehatheeram Logo"
+            width={66}
+            height={44}
             className={styles.logoImage}
             priority
           />
