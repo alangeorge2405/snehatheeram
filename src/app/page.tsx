@@ -34,8 +34,8 @@ export default function Home() {
             <Image
               src="/images/snehatheeram_logo.png"
               alt="Snehatheeram Logo"
-              width={90}
-              height={60}
+              width={120}
+              height={80}
             />
           </div>
           <span className={styles.sectionSubtitle}>Who We Are</span>
@@ -126,9 +126,9 @@ export default function Home() {
             {/* Pillar 1: Hair Donation */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>✂</div>
-              <h3 className={styles.pillarTitle}>&quot;Kesadhanam&quot; Hair Donation</h3>
+              <h3 className={styles.pillarTitle}>Hair Donation</h3>
               <p className={styles.pillarDescription}>
-                In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva and hands them over to Amala Hospital, where they are crafted and distributed as natural wigs to cancer patients.
+                Are you interested in donating hair? In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva to craft natural wigs for cancer patients.
               </p>
               <Link href="/services#hair-donation" className={styles.pillarLink}>
                 Learn More <span>→</span>

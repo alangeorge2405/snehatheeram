@@ -93,10 +93,10 @@ export default function Services() {
           {/* Service 1: Hair Donation */}
           <div id="hair-donation" className={styles.serviceCard}>
             <div className={styles.content}>
-              <span className={styles.categoryTag}>Kesadhanam Drive</span>
-              <h2 className={styles.serviceTitle}>Kesadhanam (Hair Donation)</h2>
+              <span className={styles.categoryTag}>Hair Donation Drive</span>
+              <h2 className={styles.serviceTitle}>Donate Hair & Support Cancer Survivors</h2>
               <p className={styles.description}>
-                To support cancer survivors in their healing journey, Snehatheeram facilitates the <strong>Kesadhanam Hair Donation Program</strong> in collaboration with <strong>Amala Hospital, Thrissur</strong>. Snehatheeram acts as the collection hub in Aluva, gathering healthy hair donations and handing them over to Amala Hospital, where they are crafted into custom natural wigs and distributed to cancer patients undergoing chemotherapy.
+                Are you interested in donating your hair? To support cancer survivors in their healing journey, Snehatheeram facilitates the <strong>Hair Donation Program</strong> in collaboration with <strong>Amala Hospital, Thrissur</strong>. Snehatheeram acts as the collection hub in Aluva, gathering healthy hair donations and handing them over to Amala Hospital, where they are crafted into custom natural wigs and distributed to cancer patients undergoing chemotherapy.
               </p>
               <ul className={styles.featuresList}>
                 <li className={styles.featureItem}>

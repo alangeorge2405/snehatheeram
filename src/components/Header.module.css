@@ -42,13 +42,18 @@
 
 .logoImage {
   object-fit: contain;
-  height: 44px;
+  height: 54px;
   width: auto;
+  transition: height var(--transition-fast);
+}
+
+.scrolled .logoImage {
+  height: 46px;
 }
 
 .logoDivider {
   width: 1.5px;
-  height: 32px;
+  height: 38px;
   background-color: var(--border-color);
 }
 
@@ -161,7 +166,7 @@
   }
 
   .logoDivider {
-    height: 24px;
+    height: 28px;
   }
 
   .logoText .subBrand {
