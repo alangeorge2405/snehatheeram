@@ -71,74 +71,10 @@ export default function Donate() {
         </div>
       </section>
 
-      {/* Bank Transfer Details Section */}
-      <section id="bank-details" className={`${styles.bankSection} section`}>
-        <div className="container">
-          <div style={{ textAlign: "center", marginBottom: "50px" }}>
-            <h2 className={styles.sectionTitle}>Bank Transfer Details</h2>
-            <p className={styles.subtitle}>
-              All bank transfers are managed under the Sneha Charitable Trust. To protect account details, the full account numbers are not published online. Please contact us directly to obtain transfer details.
-            </p>
-          </div>
-          
-          <div className={styles.bankGrid}>
-            {/* Local SIB account */}
-            <div className={styles.bankCard}>
-              <h3 className={styles.bankCardTitle}>
-                Indian Donors <span className={styles.bankBadge}>Domestic Transfer</span>
-              </h3>
-              <div className={styles.bankDetailsList}>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Account Name</span>
-                  <span className={styles.bankValue}>Sneha Charitable Trust - Snehatheeram</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Bank Name</span>
-                  <span className={styles.bankValue}>South Indian Bank (SIB)</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Branch</span>
-                  <span className={styles.bankValue}>Aluva Branch, Ernakulam, Kerala</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>IFSC Code</span>
-                  <span className={styles.bankValue}>SIBL0000022</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Foreign FCRA SIB account */}
-            <div className={styles.bankCard}>
-              <h3 className={styles.bankCardTitle}>
-                International Donors <span className={styles.bankBadgeForeign}>FCRA Account</span>
-              </h3>
-              <div className={styles.bankDetailsList}>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Account Name</span>
-                  <span className={styles.bankValue}>Sneha Charitable Trust - FCRA</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Bank Name</span>
-                  <span className={styles.bankValue}>South Indian Bank (SIB)</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>Branch</span>
-                  <span className={styles.bankValue}>Aluva Branch, Ernakulam, Kerala</span>
-                </div>
-                <div className={styles.bankDetailRow}>
-                  <span className={styles.bankLabel}>IFSC Code</span>
-                  <span className={styles.bankValue}>SIBL0000022</span>
-                </div>
-                <p style={{ fontSize: "0.8rem", color: "var(--text-light)", fontStyle: "italic", marginTop: "8px" }}>
-                  *All international transactions must be made through this FCRA registered bank account in accordance with Indian regulations.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Connection and Volunteering Info Card */}
+      {/* Connection and Volunteering Info Section */}
+      <section className="section" style={{ paddingTop: "0px", paddingBottom: "60px" }}>
+        <div className="container" style={{ maxWidth: "800px" }}>
           <div style={{
-            marginTop: "50px",
             background: "linear-gradient(135deg, var(--background-secondary) 0%, rgba(200, 75, 75, 0.05) 100%)",
             border: "2px solid var(--primary-color)",
             borderRadius: "var(--border-radius-lg)",
