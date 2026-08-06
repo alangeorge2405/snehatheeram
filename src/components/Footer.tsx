@@ -15,8 +15,8 @@ export default function Footer() {
               <Image
                 src="/images/snehatheeram_logo.png"
                 alt="Snehatheeram Logo"
-                width={72}
-                height={48}
+                width={90}
+                height={60}
                 className={styles.footerLogo}
               />
               <span className={styles.footerBrandName}>Snehatheeram</span>

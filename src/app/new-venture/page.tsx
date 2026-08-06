@@ -16,7 +16,7 @@ export default function NewVenture() {
         <div className="container">
           <h1 className={styles.holisticTitle}>ST. CAMILLUS HOLISTIC CARE CENTRE</h1>
           <p className={styles.holisticSubtitle}>
-            &ldquo;Life in its Fullness&rdquo; Jn. (10:10)
+            &ldquo;Life in its Fullness&rdquo; (John 10:10)
           </p>
         </div>
       </section>

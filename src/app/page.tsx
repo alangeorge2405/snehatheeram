@@ -10,7 +10,9 @@ export default function Home() {
       <section className={`${styles.hero} animate-fade-in`}>
         <div className={`${styles.heroContainer} container`}>
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Snehatheeram- a unit of Sneha Charitable Trust®</span>
+            <span className={styles.badge}>
+              <strong className={styles.badgeHighlight}>Snehatheeram.</strong> A unit of Sneha Charitable Trust®
+            </span>
             <h1 className={styles.heroTitle}>A Shore of Love, Care & Dignity</h1>
             <p className={styles.heroSubtitle}>
               Snehatheeram – A Shore of Love is a 24-hour residential healthcare facility providing comprehensive medical and psychosocial services to vulnerable populations, including older adults, individuals without adequate social support, and people living with HIV/AIDS (PLHIV).
@@ -34,8 +36,8 @@ export default function Home() {
             <Image
               src="/images/snehatheeram_logo.png"
               alt="Snehatheeram Logo"
-              width={120}
-              height={80}
+              width={160}
+              height={107}
             />
           </div>
           <span className={styles.sectionSubtitle}>Who We Are</span>

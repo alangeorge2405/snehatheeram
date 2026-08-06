@@ -41,8 +41,8 @@ export default function Header() {
           <Image
             src="/images/snehatheeram_logo.png"
             alt="Snehatheeram Logo"
-            width={90}
-            height={60}
+            width={120}
+            height={80}
             className={styles.logoImage}
             priority
           />

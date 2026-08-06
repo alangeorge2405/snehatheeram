@@ -42,13 +42,13 @@
 
 .logoImage {
   object-fit: contain;
-  height: 54px;
+  height: 70px;
   width: auto;
   transition: height var(--transition-fast);
 }
 
 .scrolled .logoImage {
-  height: 46px;
+  height: 58px;
 }
 
 .logoDivider {
