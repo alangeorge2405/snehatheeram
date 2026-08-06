@@ -231,11 +231,11 @@ export default async function Services() {
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/about_bg.jpg"
-                alt="NANMA Community Palliative Care Outreach"
+                src="/images/nanma_logo.jpg"
+                alt="NANMA Outreach &amp; Palliative Care - St. Camillus Out-reach Care Logo"
                 width={500}
                 height={350}
-                className={styles.serviceImage}
+                className={styles.logoContainImage}
               />
             </div>
           </div>
