@@ -123,7 +123,7 @@ export default function About() {
               <div className={styles.valueIcon}>🩺</div>
               <h3 className={styles.valueTitle}>Quality Care</h3>
               <p className={styles.valueDescription}>
-                Delivering round-the-clock professional medical support, patient-centered therapies, and healthy nutrition tailored to each resident.
+                Delivering round-the-clock professional medical support, patient-centered therapies and healthy nutrition tailored to each resident.
               </p>
             </div>
           </div>

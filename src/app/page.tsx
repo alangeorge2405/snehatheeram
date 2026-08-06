@@ -100,16 +100,12 @@ export default function Home() {
               <div className={styles.statLabel}>Years of Loving Service</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>150+</div>
+              <div className={styles.statNumber}>1000+</div>
               <div className={styles.statLabel}>Residents Cared For</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>500+</div>
+              <div className={styles.statNumber}>3000+</div>
               <div className={styles.statLabel}>Outreach Palliative Families</div>
-            </div>
-            <div className={styles.statCard}>
-              <div className={styles.statNumber}>24/7</div>
-              <div className={styles.statLabel}>Medical & Nursing Care</div>
             </div>
           </div>
         </div>
