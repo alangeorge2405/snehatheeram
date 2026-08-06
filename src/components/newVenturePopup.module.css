@@ -3,7 +3,7 @@
   bottom: 30px;
   right: 30px;
   z-index: 9999;
-  max-width: 380px;
+  max-width: 300px;
   width: calc(100% - 60px);
   animation: slideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   pointer-events: auto;
@@ -25,7 +25,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: var(--border-radius-lg);
-  padding: 24px 28px;
+  padding: 18px 22px;
   box-shadow: 0 10px 30px rgba(2, 44, 34, 0.25);
   cursor: pointer;
   position: relative;
@@ -51,11 +51,11 @@
 
 .closeBtn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 14px;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
@@ -68,7 +68,7 @@
 }
 
 .cardHeader {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .badge {
@@ -84,18 +84,18 @@
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: #fff;
   line-height: 1.3;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .cardText {
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.82rem;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .cardFooter {
