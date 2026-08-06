@@ -120,20 +120,13 @@ export default async function Services() {
                 </li>
               </ul>
             </div>
-            <div className={styles.imageGridTwoCol}>
+            <div className={styles.singlePosterContainer}>
               <Image
-                src="/images/hair_donation.png"
-                alt="Beautifully braided lock of donated hair"
-                width={250}
-                height={350}
-                className={styles.gridImage}
-              />
-              <Image
-                src="/images/hair_cutting.png"
-                alt="Hair cutting session for cancer support donation"
-                width={250}
-                height={350}
-                className={styles.gridImage}
+                src="/images/hair_donation_poster.jpeg"
+                alt="Ann Mary Joseph Hair Donation Thank You Poster"
+                width={500}
+                height={750}
+                className={styles.posterImage}
               />
             </div>
           </div>
