@@ -79,6 +79,9 @@ export default function Footer() {
                 <Link href="/services">Care Programs</Link>
               </li>
               <li>
+                <Link href="/new-venture">Our New Venture</Link>
+              </li>
+              <li>
                 <Link href="/donate">Support Us</Link>
               </li>
               <li>

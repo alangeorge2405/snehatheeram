@@ -1,0 +1,227 @@
+.holisticPage {
+  background-color: var(--background-primary);
+  min-height: 100vh;
+}
+
+.holisticHeader {
+  position: relative;
+  background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+  color: var(--text-white);
+  padding: 100px 0;
+  text-align: center;
+  border-bottom: 4px solid #10b981;
+}
+
+.holisticHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 85%);
+  pointer-events: none;
+}
+
+.holisticTitle {
+  font-size: 3.2rem;
+  font-weight: 850;
+  margin-bottom: 15px;
+  color: #fff;
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.holisticSubtitle {
+  font-size: 1.35rem;
+  color: #a7f3d0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+@media (max-width: 768px) {
+  .holisticHeader {
+    padding: 70px 0;
+  }
+
+  .holisticTitle {
+    font-size: 2.2rem;
+  }
+
+  .holisticSubtitle {
+    font-size: 1.1rem;
+  }
+}
+
+.holisticSection {
+  padding: 80px 0;
+}
+
+.holisticGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .holisticGrid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+
+.greenBadge {
+  align-self: flex-start;
+  color: #047857;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  padding: 6px 16px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.04) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--border-radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.03);
+  margin-bottom: 15px;
+}
+
+.greenBadge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.holisticSectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: var(--secondary-color);
+}
+
+.holisticDescription {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.holisticQuote {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(16, 185, 129, 0.02) 100%);
+  border-left: 4px solid #10b981;
+  padding: 24px 30px;
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  margin: 30px 0;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #065f46;
+  position: relative;
+  box-shadow: inset 0 0 10px rgba(16, 185, 129, 0.02);
+}
+
+.holisticQuote::before {
+  content: "“";
+  font-size: 4rem;
+  font-family: serif;
+  color: rgba(16, 185, 129, 0.08);
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.holisticQuoteAuthor {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #047857;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.02);
+}
+
+.imageLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(2, 44, 34, 0.9) 0%, rgba(2, 44, 34, 0) 100%);
+  color: #fff;
+  padding: 30px 20px 20px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featureCard {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  padding: 24px;
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.05);
+}
+
+.featureTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.featureIcon {
+  color: #10b981;
+}
+
+.featureText {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
