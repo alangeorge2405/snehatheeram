@@ -47,7 +47,7 @@ export default function About() {
           <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
             <div className={styles.imageCard}>
               <Image
-                src="/images/st_camillus.png"
+                src="/images/st_camillus.jpeg"
                 alt="Portrait of St. Camillus de Lellis"
                 width={600}
                 height={450}
