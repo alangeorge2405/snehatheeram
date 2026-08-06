@@ -275,7 +275,6 @@ export default function Contact() {
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Phone Contacts</span>
                 <span className={styles.infoValue}>
-                  Office Landline: <a href="tel:+914842607777">+91 484 2607777</a><br />
                   Director Fr. Teji: <a href="tel:+919961153528">+91 9961153528</a><br />
                   Administrator Fr. Vince: <a href="tel:+917012160545">+91 7012160545</a>
                 </span>
@@ -284,7 +283,7 @@ export default function Contact() {
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Email Address</span>
                 <span className={styles.infoValue}>
-                  <a href="mailto:snehatheeram.carehome@gmail.com">snehatheeram.carehome@gmail.com</a>
+                  <a href="mailto:snehatheeram.carehome@gmail.com">snehatheeramjune2003@gmail.com</a>
                 </span>
               </div>
 

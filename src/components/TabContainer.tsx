@@ -1,13 +1,38 @@
-import React, { ReactNode } from 'react';
+'use client';
+
+import React, { useState, ReactNode } from 'react';
+import styles from './tabContainer.module.css';
 
 interface TabContainerProps {
-  children: ReactNode;
+  servicesPanel: ReactNode;
+  holisticPanel: ReactNode;
 }
 
-// Simple wrapper that currently just renders its children.
-// This placeholder can be extended later to provide real tab navigation.
-const TabContainer: React.FC<TabContainerProps> = ({ children }) => {
-  return <>{children}</>;
-};
+export default function TabContainer({ servicesPanel, holisticPanel }: TabContainerProps) {
+  const [activeTab, setActiveTab] = useState<'programs' | 'holistic'>('programs');
 
-export default TabContainer;
+  return (
+    <div className={styles.container}>
+      {/* Tab Switcher */}
+      <div className={styles.tabBar}>
+        <button
+          className={`${styles.tabBtn} ${activeTab === 'programs' ? styles.activeTab : ''}`}
+          onClick={() => setActiveTab('programs')}
+        >
+          ❤️ Care Programs & Services
+        </button>
+        <button
+          className={`${styles.tabBtn} ${activeTab === 'holistic' ? styles.activeTab : ''} ${styles.holisticTabBtn}`}
+          onClick={() => setActiveTab('holistic')}
+        >
+          🌿 St. Camillus Holistic Care Centre
+        </button>
+      </div>
+
+      {/* Tab Panels */}
+      <div className={styles.tabContent}>
+        {activeTab === 'programs' ? servicesPanel : holisticPanel}
+      </div>
+    </div>
+  );
+}

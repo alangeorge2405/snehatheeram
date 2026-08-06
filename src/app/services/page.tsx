@@ -10,25 +10,27 @@ export const revalidate = 86400; // refresh daily
 
 export default async function Services() {
   const reviews = await fetchGoogleReviews();
-  return (
-    <TabContainer>
-      <section className={styles.servicesPage}>
-        {/* Page Header */}
-        <section className={styles.pageHeader}>
-          <div className="container">
-            <h1 className={styles.title}>Care Programs &amp; Services</h1>
-            <p className={styles.subtitle}>
-              A comprehensive, patient‑centered approach to healthcare, residential shelter, and social reintegration.
-            </p>
-          </div>
-        </section>
-        {/* Services Breakdown */}
-        <section className="container">
-          <div className={styles.servicesContainer}>
-            {/* Camillian Family Section */}
-            <div className={styles.camillianFamilySection}>
-              <div className={styles.familyGrid}>
-                <div className={styles.content}>
+
+  // PANEL 1: Care Programs & Services
+  const servicesPanel = (
+    <div className={styles.servicesPage}>
+      {/* Page Header */}
+      <section className={styles.pageHeader}>
+        <div className="container">
+          <h1 className={styles.title}>Care Programs &amp; Services</h1>
+          <p className={styles.subtitle}>
+            A comprehensive, patient‑centered approach to healthcare, residential shelter, and social reintegration.
+          </p>
+        </div>
+      </section>
+
+      {/* Services Breakdown */}
+      <section className="container">
+        <div className={styles.servicesContainer}>
+          {/* Camillian Family Section */}
+          <div className={styles.camillianFamilySection}>
+            <div className={styles.familyGrid}>
+              <div className={styles.content}>
                 <span className={styles.categoryTagLay}>Lay Association</span>
                 <h2 className={styles.serviceTitle}>Camillian Family – Snehatheeram, Aluva</h2>
                 
@@ -90,7 +92,7 @@ export default async function Services() {
           <div id="hair-donation" className={styles.serviceCard}>
             <div className={styles.content}>
               <span className={styles.categoryTag}>Hair Donation Drive</span>
-              <h2 className={styles.serviceTitle}>Donate Hair & Support Cancer Survivors</h2>
+              <h2 className={styles.serviceTitle}>Donate Hair &amp; Support Cancer Survivors</h2>
               <p className={styles.description}>
                 Are you interested in donating your hair? To support cancer survivors in their healing journey, Snehatheeram facilitates the <strong>Hair Donation Program</strong> in collaboration with <strong>Amala Hospital, Thrissur</strong>. Snehatheeram acts as the collection hub in Aluva, gathering healthy hair donations and handing them over to Amala Hospital, where they are crafted into custom natural wigs and distributed to cancer patients undergoing chemotherapy.
               </p>
@@ -131,7 +133,7 @@ export default async function Services() {
           <div id="elderly" className={styles.serviceCard}>
             <div className={styles.content}>
               <span className={styles.categoryTag}>Residential Care</span>
-              <h2 className={styles.serviceTitle}>Elderly & Destitute Care</h2>
+              <h2 className={styles.serviceTitle}>Elderly &amp; Destitute Care</h2>
               <p className={styles.description}>
                 Snehatheeram provides a warm, loving home environment for elderly individuals who have been abandoned, neglected, or left without financial resources. We focus on healing not just physical ailments, but the pain of loneliness.
               </p>
@@ -165,7 +167,7 @@ export default async function Services() {
           <div id="plhiv" className={styles.serviceCard}>
             <div className={styles.content}>
               <span className={styles.categoryTag}>Medical support</span>
-              <h2 className={styles.serviceTitle}>PLHIV Care & Treatment</h2>
+              <h2 className={styles.serviceTitle}>PLHIV Care &amp; Treatment</h2>
               <p className={styles.description}>
                 Founded at a time of severe crisis, Snehatheeram has two decades of experience providing specialized, compassionate support for People Living with HIV/AIDS (PLHIV) who have faced rejection and trauma.
               </p>
@@ -199,7 +201,7 @@ export default async function Services() {
           <div id="outreach" className={styles.serviceCard}>
             <div className={styles.content}>
               <span className={styles.categoryTag}>Community Ministry</span>
-              <h2 className={styles.serviceTitle}>&quot;NANMA&quot; Outreach & Palliative Care</h2>
+              <h2 className={styles.serviceTitle}>&quot;NANMA&quot; Outreach &amp; Palliative Care</h2>
               <p className={styles.description}>
                 For the sick, elderly, and terminally ill who cannot move into our residential centers, our specialized &quot;NANMA&quot; outreach team brings compassionate home-based care and support directly to their doorsteps.
               </p>
@@ -233,7 +235,7 @@ export default async function Services() {
           <div id="counseling" className={styles.serviceCard}>
             <div className={styles.content}>
               <span className={styles.categoryTag}>Mental Well-being</span>
-              <h2 className={styles.serviceTitle}>Counseling & Therapy</h2>
+              <h2 className={styles.serviceTitle}>Counseling &amp; Therapy</h2>
               <p className={styles.description}>
                 Physical health is only one aspect of well-being. Snehatheeram offers dedicated psychological counseling services to help residents, outpatients, and families overcome mental, emotional, and relational trauma.
               </p>
@@ -267,7 +269,7 @@ export default async function Services() {
           <div id="ambulance" className={styles.serviceCard}>
             <div className={styles.content}>
               <span className={styles.categoryTag}>Emergency support</span>
-              <h2 className={styles.serviceTitle}>Ambulance & Emergency Transport</h2>
+              <h2 className={styles.serviceTitle}>Ambulance &amp; Emergency Transport</h2>
               <p className={styles.description}>
                 Snehatheeram operates a dedicated ambulance service to provide prompt, safe, and comfortable medical transit for our residents and palliative outreach patients who require urgent or routine hospital care.
               </p>
@@ -298,6 +300,7 @@ export default async function Services() {
           </div>
         </div>
       </section>
+
       <ReviewTab reviews={reviews} />
 
       {/* Call to Action Section */}
@@ -317,7 +320,93 @@ export default async function Services() {
           </div>
         </div>
       </section>
+    </div>
+  );
+
+  // PANEL 2: Holistic Care Centre (Greenish Touch)
+  const holisticPanel = (
+    <div className={styles.holisticPage}>
+      {/* Page Header */}
+      <section className={styles.holisticHeader}>
+        <div className="container">
+          <h1 className={styles.holisticTitle}>ST. CAMILLUS HOLISTIC CARE CENTRE</h1>
+          <p className={styles.holisticSubtitle}>
+            &ldquo;Life in its Fullness&rdquo; Jn. (10:10)
+          </p>
+        </div>
       </section>
-    </TabContainer>
+
+      {/* Holistic Care Content */}
+      <section className={`${styles.holisticSection} container`}>
+        <div className={styles.holisticGrid}>
+          <div>
+            <span className={styles.greenBadge}>New Venture</span>
+            <h2 className={styles.holisticSectionTitle}>Our Mission</h2>
+            
+            <p className={styles.holisticDescription}>
+              Inspired by the Charism of St. Camillus, our heavenly patron, we are now moving towards a new step in the field of Healthcare — a center for restoring the health of soul, mind, and body through a holistic approach. Committed to providing comprehensive care, we assume an integrative approach in therapy through our expert faculties in the fields of Ayurveda, Homeopathy, Naturopathy, and other Alternative Medicine along with Modern medical technologies and experts.
+            </p>
+
+            <p className={styles.holisticDescription}>
+              Healing for the soul and mind is also the center of our priority, providing Counseling, Spiritual guidance, Confession, Retreat, and Rehabilitation. Under the guidance of legendary physician <strong>Dr. C.D. Sahadevan (SMO, Rtd)</strong>, Chief Physician at Dhanwanthari Hospital, Thodupuzha, and team, we are dedicated to providing compassionate healing and rejuvenation which is affordable and authentic.
+            </p>
+
+            <div className={styles.holisticQuote}>
+              &ldquo;Our mission is to walk with you toward wholeness through Christ-centered, holistic healthcare.&rdquo;
+              <span className={styles.holisticQuoteAuthor}>— Our Mission Statement</span>
+            </div>
+
+            <div className={styles.featuresGrid}>
+              <div className={styles.featureCard}>
+                <h4 className={styles.featureTitle}>
+                  <span className={styles.featureIcon}>🌿</span> Integrative Therapy
+                </h4>
+                <p className={styles.featureText}>
+                  A balanced combination of Ayurveda, Homeopathy, Naturopathy, and Alternative Medicine along with Modern Medical experts.
+                </p>
+              </div>
+              
+              <div className={styles.featureCard}>
+                <h4 className={styles.featureTitle}>
+                  <span className={styles.featureIcon}>⛪</span> Soul &amp; Mind Healing
+                </h4>
+                <p className={styles.featureText}>
+                  A supportive care system providing relational Counseling, Spiritual guidance, Confession, Retreats, and complete Rehabilitation.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ marginTop: "40px" }}>
+              <Link href="/contact" className="btn btn-primary" style={{ background: "linear-gradient(135deg, #10b981 0%, #047857 100%)", borderColor: "transparent", color: "#fff", padding: "14px 28px", boxShadow: "0 4px 15px rgba(16, 185, 129, 0.25)" }}>
+                Connect with the Holistic Centre
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <div className={styles.imageWrapper}>
+              <Image
+                src="/images/holistic_care.png"
+                alt="Serene holistic and ayurvedic wellness room at St. Camillus Holistic Care Centre"
+                width={600}
+                height={500}
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+              <div className={styles.imageLabel}>
+                <strong>Integrative Wellness Center</strong><br />
+                Under the professional guidance of Dr. C.D. Sahadevan (SMO, Rtd) and team.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+
+  return (
+    <TabContainer
+      servicesPanel={servicesPanel}
+      holisticPanel={holisticPanel}
+    />
   );
 }

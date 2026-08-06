@@ -119,30 +119,6 @@ export default function Home() {
             <h2 className={styles.sectionTitle}>Our Core Pillars of Care</h2>
           </div>
           <div className={styles.pillarsGrid}>
-            {/* Pillar 1: Hair Donation */}
-            <div className={styles.pillarCard}>
-              <div className={styles.pillarIconContainer}>✂</div>
-              <h3 className={styles.pillarTitle}>Hair Donation</h3>
-              <p className={styles.pillarDescription}>
-                Are you interested in donating hair? In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva to craft natural wigs for cancer patients.
-              </p>
-              <Link href="/services#hair-donation" className={styles.pillarLink}>
-                Learn More <span>→</span>
-              </Link>
-            </div>
-
-            {/* Pillar 2: Elderly Care */}
-            <div className={styles.pillarCard}>
-              <div className={styles.pillarIconContainer}>❤</div>
-              <h3 className={styles.pillarTitle}>Elderly & Destitute Care</h3>
-              <p className={styles.pillarDescription}>
-                We provide a warm residential shelter, highly nutritious food, personal grooming, laundry services, and regular social activities for elderly individuals who have been abandoned or are destitute.
-              </p>
-              <Link href="/services#elderly" className={styles.pillarLink}>
-                Learn More <span>→</span>
-              </Link>
-            </div>
-
             {/* Pillar 3: PLHIV Support */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>✚</div>
@@ -153,7 +129,23 @@ export default function Home() {
               <Link href="/services#plhiv" className={styles.pillarLink}>
                 Learn More <span>→</span>
               </Link>
-            </div>
+            </div> 
+            {/* Pillar 2: Elderly Care */}
+            <div className={styles.pillarCard}>
+              <div className={styles.pillarIconContainer}>❤</div>
+              <h3 className={styles.pillarTitle}>Elderly & Destitute Care</h3>
+              <p className={styles.pillarDescription}>
+                We provide a warm residential shelter, highly nutritious food, personal grooming, laundry services, and regular social activities for elderly individuals who have been abandoned or are destitute.
+              </p>
+              <Link href="/services#elderly" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>                       
+
+
+
+
+
 
             {/* Pillar 4: NANMA Outreach */}
             <div className={styles.pillarCard}>
@@ -190,6 +182,17 @@ export default function Home() {
                 Learn More <span>→</span>
               </Link>
             </div>
+            {/* Pillar 1: Hair Donation */}
+            <div className={styles.pillarCard}>
+              <div className={styles.pillarIconContainer}>✂</div>
+              <h3 className={styles.pillarTitle}>Hair Donation</h3>
+              <p className={styles.pillarDescription}>
+                Are you interested in donating hair? In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva to craft natural wigs for cancer patients.
+              </p>
+              <Link href="/services#hair-donation" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>            
           </div>
         </div>
       </section>

@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+}
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--background-secondary);
+  border-bottom: 2px solid var(--border-color);
+  padding: 15px 0;
+  position: sticky;
+  top: var(--header-height);
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 12px 28px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+  border: 1.5px solid transparent;
+}
+
+.tabBtn:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.activeTab {
+  color: var(--text-white) !important;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #b03e3e 100%) !important;
+  box-shadow: 0 4px 15px rgba(200, 75, 75, 0.25);
+  border-color: transparent !important;
+}
+
+/* Holistic Tab button specific hover / active overrides for "greenish touch" */
+.holisticTabBtn:hover {
+  color: #10b981;
+  background-color: rgba(16, 185, 129, 0.08);
+}
+
+.tabBtn.holisticTabBtn.activeTab {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%) !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.25) !important;
+}
+
+.tabContent {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .tabBar {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .tabBtn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
