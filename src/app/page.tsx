@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import HeroBanner from "@/components/HeroBanner";
+import NewVenturePopup from "@/components/NewVenturePopup";
 
 export default function Home() {
   return (
@@ -217,6 +218,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <NewVenturePopup />
     </div>
   );
 }
