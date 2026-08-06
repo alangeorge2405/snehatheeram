@@ -67,21 +67,32 @@ export default async function Services() {
                 </div>
               </div>
 
-              <div className={styles.familyImageGrid}>
-                <Image
-                  src="/images/camillian_family_group.jpeg"
-                  alt="Camillian Family members group photo at Snehatheeram, Aluva"
-                  width={800}
-                  height={600}
-                  className={styles.gridImage}
-                />
-                <Image
-                  src="/images/camillian_family_portraits.jpeg"
-                  alt="St. Camillus de Lellis portraits at Snehatheeram ceremony"
-                  width={800}
-                  height={600}
-                  className={styles.gridImage}
-                />
+              <div className={styles.familyImageColumn}>
+                <div className={styles.familyImageGrid}>
+                  <Image
+                    src="/images/camillian_family_group.jpeg"
+                    alt="Camillian Family members group photo at Snehatheeram, Aluva"
+                    width={800}
+                    height={600}
+                    className={styles.gridImage}
+                  />
+                  <Image
+                    src="/images/camillian_family_portraits.jpeg"
+                    alt="St. Camillus de Lellis portraits at Snehatheeram ceremony"
+                    width={800}
+                    height={600}
+                    className={styles.gridImage}
+                  />
+                </div>
+                <div className={styles.familySingleImageContainer}>
+                  <Image
+                    src="/images/camillian_fathers_group.jpeg"
+                    alt="Camillian Fathers group photo at Snehatheeram, Aluva"
+                    width={800}
+                    height={450}
+                    className={styles.familySingleImage}
+                  />
+                </div>
               </div>
             </div>
           </div>
