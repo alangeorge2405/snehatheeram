@@ -74,14 +74,14 @@ export default async function Services() {
                     alt="Camillian Family members group photo at Snehatheeram, Aluva"
                     width={800}
                     height={600}
-                    className={styles.gridImage}
+                    className={styles.familyGridImage}
                   />
                   <Image
                     src="/images/camillian_family_portraits.jpeg"
                     alt="St. Camillus de Lellis portraits at Snehatheeram ceremony"
                     width={800}
                     height={600}
-                    className={styles.gridImage}
+                    className={styles.familyGridImage}
                   />
                 </div>
                 <div className={styles.familySingleImageContainer}>
