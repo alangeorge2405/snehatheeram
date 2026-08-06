@@ -13,7 +13,7 @@ export default function Home() {
             <span className={styles.badge}>Snehatheeram- a unit of Sneha Charitable Trust®</span>
             <h1 className={styles.heroTitle}>A Shore of Love, Care & Dignity</h1>
             <p className={styles.heroSubtitle}>
-              Snehatheeram (&quot;A Shore of Love&quot;) is a sanctuary dedicated to providing shelter, 24/7 medical care, emotional counseling, and rehabilitation to the elderly, destitute, and individuals living with HIV/AIDS.
+              Snehatheeram – A Shore of Love is a 24-hour residential healthcare facility providing comprehensive medical and psychosocial services to vulnerable populations, including older adults, individuals without adequate social support, and people living with HIV/AIDS (PLHIV).
             </p>
             <div className={styles.heroCtas}>
               <Link href="/services" className="btn btn-primary">

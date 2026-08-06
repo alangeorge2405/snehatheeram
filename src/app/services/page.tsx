@@ -1,28 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./services.module.css";
+import ReviewTab from "@/components/ReviewTab";
+import TabContainer from "@/components/TabContainer";
+import { fetchGoogleReviews } from "@/lib/googleReviews";
 
-export default function Services() {
+export const dynamic = "force-static"; // ensure static generation
+export const revalidate = 86400; // refresh daily
+
+export default async function Services() {
+  const reviews = await fetchGoogleReviews();
   return (
-    <div className={styles.servicesPage}>
-      {/* Page Header */}
-      <section className={styles.pageHeader}>
-        <div className="container">
-          <h1 className={styles.title}>Care Programs & Services</h1>
-          <p className={styles.subtitle}>
-            A comprehensive, patient-centered approach to healthcare, residential shelter, and social reintegration.
-          </p>
-        </div>
-      </section>
-
-      {/* Services Breakdown */}
-      <section className="container">
-        <div className={styles.servicesContainer}>
-          {/* Camillian Family Section */}
-          <div className={styles.camillianFamilySection}>
-            <div className={styles.familyGrid}>
-              <div className={styles.content}>
-                <span className={styles.categoryTag}>Lay Association</span>
+    <TabContainer>
+      <section className={styles.servicesPage}>
+        {/* Page Header */}
+        <section className={styles.pageHeader}>
+          <div className="container">
+            <h1 className={styles.title}>Care Programs &amp; Services</h1>
+            <p className={styles.subtitle}>
+              A comprehensive, patient‑centered approach to healthcare, residential shelter, and social reintegration.
+            </p>
+          </div>
+        </section>
+        {/* Services Breakdown */}
+        <section className="container">
+          <div className={styles.servicesContainer}>
+            {/* Camillian Family Section */}
+            <div className={styles.camillianFamilySection}>
+              <div className={styles.familyGrid}>
+                <div className={styles.content}>
+                <span className={styles.categoryTagLay}>Lay Association</span>
                 <h2 className={styles.serviceTitle}>Camillian Family – Snehatheeram, Aluva</h2>
                 
                 <p className={styles.description}>
@@ -41,35 +48,7 @@ export default function Services() {
                   St. Camillus taught that the sick are the living image of Christ and should be served with love and reverence. His famous exhortation continues to inspire us:
                 </p>
 
-                <div className={styles.quoteCard}>
-                  &ldquo;Put more heart in those hands.&rdquo;
-                  <span className={styles.quoteAuthor}>— St. Camillus de Lellis</span>
-                </div>
-
-                <p className={styles.description}>
-                  This simple yet profound message reminds us that true care is not merely a task but an expression of love. Through prayer, presence, and service, the Camillian Family seeks to bring hope, comfort, and dignity to every person who suffers.
-                </p>
-              </div>
-
-              <div>
-                <div className={styles.imageGridTwoCol} style={{ marginBottom: "25px" }}>
-                  <Image
-                    src="/images/camillian_family_group.jpeg"
-                    alt="Camillian Family members group photo at Snehatheeram, Aluva"
-                    width={300}
-                    height={350}
-                    className={styles.gridImage}
-                  />
-                  <Image
-                    src="/images/camillian_family_portraits.jpeg"
-                    alt="St. Camillus de Lellis portraits at Snehatheeram ceremony"
-                    width={300}
-                    height={350}
-                    className={styles.gridImage}
-                  />
-                </div>
-
-                <div className={styles.joinUsBox}>
+                <div className={styles.joinUsBox} style={{ marginTop: "30px" }}>
                   <h3 className={styles.joinUsTitle}>Join Us</h3>
                   <p className={styles.joinUsText}>
                     Are you looking to deepen your spiritual life, grow in the spirit of St. Camillus, and share the compassionate love of Jesus with the sick and dying?
@@ -77,15 +56,32 @@ export default function Services() {
                   <p className={styles.joinUsText}>
                     We warmly invite you to become part of the Camillian Family at Snehatheeram. Together, we journey in faith, prayer, and service, discovering Christ in those who suffer and bringing His healing presence to the world.
                   </p>
-                  <Link href="/contact" className="btn btn-primary w-100" style={{ textAlign: "center", display: "block", marginTop: "15px" }}>
+                  <Link href="/contact" className={styles.joinUsBtn}>
                     Contact Us to Join
                   </Link>
 
                   <div className={styles.bibleQuote}>
                     &ldquo;As often as you did it to one of these least brothers and sisters of mine, you did it to me.&rdquo;
-                    <strong style={{ display: "block", marginTop: "5px", color: "var(--primary-color)" }}>— Matthew 25:40</strong>
+                    <span className={styles.bibleQuoteAuthor}>— Matthew 25:40</span>
                   </div>
                 </div>
+              </div>
+
+              <div className={styles.familyImageGrid}>
+                <Image
+                  src="/images/camillian_family_group.jpeg"
+                  alt="Camillian Family members group photo at Snehatheeram, Aluva"
+                  width={800}
+                  height={600}
+                  className={styles.gridImage}
+                />
+                <Image
+                  src="/images/camillian_family_portraits.jpeg"
+                  alt="St. Camillus de Lellis portraits at Snehatheeram ceremony"
+                  width={800}
+                  height={600}
+                  className={styles.gridImage}
+                />
               </div>
             </div>
           </div>
@@ -302,6 +298,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <ReviewTab reviews={reviews} />
 
       {/* Call to Action Section */}
       <section className={`${styles.bottomCta} section`}>
@@ -320,6 +317,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-    </div>
+      </section>
+    </TabContainer>
   );
 }

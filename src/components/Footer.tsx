@@ -21,9 +21,7 @@ export default function Footer() {
               />
               <span className={styles.footerBrandName}>Snehatheeram</span>
             </div>
-            <p className={styles.disclaimer}>
-              Snehatheeram (&quot;A Shore of Love&quot;) is a care and support center managed by the <strong>Sneha Charitable Trust</strong>, the social ministry of the Camillian Order (Ministers of the Infirm) in India. Established in 2004.
-            </p>
+
             <div className={styles.socials}>
               <a
                 href="https://www.instagram.com/snehatheeramcamillians/"
@@ -99,7 +97,6 @@ export default function Footer() {
             <div className={styles.contactItem}>
               <strong>Phone:</strong>
               <p>
-                Landline: <a href="tel:+914842607777">+91 484 2607777</a><br />
                 Fr. Teji: <a href="tel:+919961153528">+91 9961153528</a><br />
                 Fr. Vince: <a href="tel:+917012160545">+91 7012160545</a>
               </p>
@@ -107,7 +104,7 @@ export default function Footer() {
             <div className={styles.contactItem}>
               <strong>Email:</strong>
               <p>
-                <a href="mailto:snehatheeram.carehome@gmail.com">snehatheeram.carehome@gmail.com</a>
+                <a href="mailto:snehatheeram.carehome@gmail.com">snehatheeramjune2003@gmail.com</a>
               </p>
             </div>
           </div>

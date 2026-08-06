@@ -9,7 +9,7 @@ export default function About() {
         <div className="container">
           <h1 className={styles.title}>About Snehatheeram</h1>
           <p className={styles.subtitle}>
-            A testament to extreme charity, loving kindness, and the preservation of human dignity in Aluva, Kerala.
+            A testament to compassionate service, loving kindness, and the preservation of human dignity in Aluva, Kerala.
           </p>
         </div>
       </section>
@@ -21,13 +21,12 @@ export default function About() {
             <span className={styles.sectionLabel}>Our Roots</span>
             <h2 className={styles.sectionTitle}>The Story of Snehatheeram</h2>
             <p className={styles.paragraph}>
-              Snehatheeram, which translates to <strong>&quot;A Shore of Love&quot;</strong>, was founded in 2004 in West Kadungalloor, Aluva. It was established by the <strong>Sneha Charitable Trust</strong>, a healthcare initiative created by the <strong>Camillians</strong> (Order of the Ministers of the Infirm) in India.
+              Snehatheeram – A Shore of Love – was founded in 2004 at West Kadungalloor, Aluva, by the Sneha Charitable Trust, a healthcare initiative of the Camillians (Order of the Ministers of the Infirm) in India.            </p>
+            <p className={styles.paragraph}>
+              Initially, Snehatheeram was established as a care and support centre for People Living with HIV/AIDS (PLHIV). At a time when HIV/AIDS was associated with considerable social stigma, many infected and affected individuals faced rejection and abandonment by their families and communities. Snehatheeram provided a safe and supportive environment, offering shelter, nutritious food, medical care, professional counselling, and comprehensive palliative care.
             </p>
             <p className={styles.paragraph}>
-              Originally, Snehatheeram was established specifically as a care and support center for People Living with HIV/AIDS (PLHIV). In 2004, HIV was accompanied by severe social stigma, causing many sufferers to be rejected by their families and communities. Snehatheeram stepped in to offer a safe shelter, nutritious food, professional counseling, and comprehensive palliative medical treatments.
-            </p>
-            <p className={styles.paragraph}>
-              As the medical landscape of HIV treatment evolved with antiretroviral therapy (ART) and social stigma began to ease, Snehatheeram opened its doors to a broader population in need. Today, it operates as a full-fledged care facility offering housing, healthcare, and dignified lives to the elderly destitute, abandoned individuals, and terminally ill patients.
+              With the free availability of antiretroviral therapy (ART), the expansion of community-based care, and the gradual reduction of stigma surrounding HIV/AIDS, Snehatheeram expanded its services to meet the needs of other vulnerable groups. Today, it is a comprehensive care facility providing residential care, healthcare, and dignified living for elderly persons without support, abandoned individuals, and those living with terminal illnesses.
             </p>
           </div>
           <div className={styles.imageCard}>
@@ -110,7 +109,7 @@ export default function About() {
               <div className={styles.valueIcon}>🤝</div>
               <h3 className={styles.valueTitle}>Inclusivity</h3>
               <p className={styles.valueDescription}>
-                Opening our doors to the most marginalized, forgotten, andstigmatized members of our society.
+                Opening our doors to the most marginalized, forgotten, and stigmatized members of our society.
               </p>
             </div>
             <div className={styles.valueCard}>
@@ -118,6 +117,13 @@ export default function About() {
               <h3 className={styles.valueTitle}>Integrity</h3>
               <p className={styles.valueDescription}>
                 Running all our care homes, programs, and donation allocations with the highest ethical and transparent standards.
+              </p>
+            </div>
+            <div className={styles.valueCard}>
+              <div className={styles.valueIcon}>🩺</div>
+              <h3 className={styles.valueTitle}>Quality Care</h3>
+              <p className={styles.valueDescription}>
+                Delivering round-the-clock professional medical support, patient-centered therapies, and healthy nutrition tailored to each resident.
               </p>
             </div>
           </div>

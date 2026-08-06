@@ -17,10 +17,7 @@ export default function Donate() {
       {/* Core Needs & Expense Details */}
       <section className="section" style={{ paddingBottom: "20px" }}>
         <div className="container" style={{ maxWidth: "800px", textAlign: "center" }}>
-          <h2 className={styles.sectionTitle}>Current Strength & Expenses</h2>
-          <p className={styles.panelIntro} style={{ fontSize: "1.15rem", lineHeight: "1.8", color: "var(--text-secondary)" }}>
-            Snehatheeram currently provides residential care for <strong>12 residents</strong>. Including our dedicated nursing, cooking, and administrative staff, the total strength of our household is <strong>15 to 17 people</strong> daily.
-          </p>
+
 
           <div className={styles.optionsGrid} style={{ marginTop: "40px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "30px" }}>
             <div className={styles.optionCard} style={{ cursor: "default", padding: "30px", border: "2px solid var(--primary-color)" }}>
@@ -64,7 +61,7 @@ export default function Donate() {
               <div style={{ fontSize: "2.5rem" }}>🤝</div>
               <span className={styles.cardTitle} style={{ fontSize: "1.25rem" }}>Volunteer Service</span>
               <p className={styles.cardDesc} style={{ textAlign: "center", marginTop: "10px" }}>
-                Anyone can offer volunteering for our mission. Lend your time, skills, or professional expertise in healthcare, activities, or general care support.
+                Everyone is welcome to contribute to our mission. Share your time, skills, or professional expertise to support our healthcare and community-based activities.
               </p>
             </div>
           </div>

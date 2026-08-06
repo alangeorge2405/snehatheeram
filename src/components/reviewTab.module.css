@@ -1,0 +1,38 @@
+.reviewSection {
+  padding: 2rem 0;
+  background: var(--bg-gradient, linear-gradient(135deg, #2c3e50, #4ca1af));
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.reviewList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.reviewCard {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+.reviewCard:hover {
+  transform: translateY(-4px);
+}
+.reviewText {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+.reviewAuthor {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #e0e0e0;
+}
+.reviewRating {
+  color: #ffd700;
+}
