@@ -9,21 +9,16 @@ export default function NewVenturePopup() {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if the user has already dismissed the popup
-    const isDismissed = localStorage.getItem('dismissedNewVenturePopup');
-    if (!isDismissed) {
-      // Delay showing the popup slightly for a premium feel (e.g. 1.5s after load)
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 1500);
-      return () => clearTimeout(timer);
-    }
+    // Show the popup 1 second after home page mounts/loads
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   const handleClose = (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent redirect on close button click
     setIsVisible(false);
-    localStorage.setItem('dismissedNewVenturePopup', 'true');
   };
 
   const handleCardClick = () => {
