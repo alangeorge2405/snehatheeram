@@ -22,37 +22,39 @@ export async function POST(request: Request) {
       );
     }
 
-    // Save submission locally to data/submissions.json
-    const dataDir = path.join(process.cwd(), "data");
-    const filePath = path.join(dataDir, "submissions.json");
-
-    // Ensure directory exists
-    await fs.mkdir(dataDir, { recursive: true });
-
-    let submissions = [];
+    // Save submission locally to data/submissions.json (will write locally, but fail gracefully on Vercel's read-only system)
     try {
-      const fileData = await fs.readFile(filePath, "utf-8");
-      submissions = JSON.parse(fileData);
-    } catch {
-      // File doesn't exist yet, start with empty array
+      const dataDir = path.join(process.cwd(), "data");
+      const filePath = path.join(dataDir, "submissions.json");
+
+      // Ensure directory exists
+      await fs.mkdir(dataDir, { recursive: true });
+
+      let submissions = [];
+      try {
+        const fileData = await fs.readFile(filePath, "utf-8");
+        submissions = JSON.parse(fileData);
+      } catch {
+        // File doesn't exist yet, start with empty array
+      }
+
+      const newSubmission = {
+        id: Date.now().toString(),
+        name: name.trim(),
+        email: email.trim(),
+        phone: phone?.trim() || "Not provided",
+        subject: subject || "General Inquiry",
+        message: message.trim(),
+        submittedAt: new Date().toISOString(),
+      };
+
+      submissions.push(newSubmission);
+      await fs.writeFile(filePath, JSON.stringify(submissions, null, 2), "utf-8");
+    } catch (fsError) {
+      console.warn("Local filesystem is read-only (expected on Vercel). Skipping local backup file write.", fsError);
     }
 
-    const newSubmission = {
-      id: Date.now().toString(),
-      name: name.trim(),
-      email: email.trim(),
-      phone: phone?.trim() || "Not provided",
-      subject: subject || "General Inquiry",
-      message: message.trim(),
-      submittedAt: new Date().toISOString(),
-    };
-
-    submissions.push(newSubmission);
-    await fs.writeFile(filePath, JSON.stringify(submissions, null, 2), "utf-8");
-
-
-
-    return NextResponse.json({ success: true, message: "Submission saved successfully." });
+    return NextResponse.json({ success: true, message: "Submission processed successfully." });
   } catch (error) {
     console.error("Contact Route Error:", error);
     return NextResponse.json(

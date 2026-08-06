@@ -42,13 +42,18 @@
 
 .logoImage {
   object-fit: contain;
-  height: 44px;
+  height: 70px;
   width: auto;
+  transition: height var(--transition-fast);
+}
+
+.scrolled .logoImage {
+  height: 58px;
 }
 
 .logoDivider {
   width: 1.5px;
-  height: 32px;
+  height: 38px;
   background-color: var(--border-color);
 }
 
@@ -152,14 +157,25 @@
 /* Responsive breakpoint */
 @media (max-width: 992px) {
   .desktopNav,
-  .ctaContainer,
-  .logoDivider,
-  .logoText .subBrand {
+  .ctaContainer {
     display: none;
   }
 
+  .logoContainer {
+    gap: 10px;
+  }
+
+  .logoDivider {
+    height: 28px;
+  }
+
+  .logoText .subBrand {
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+  }
+
   .logoText .brandName {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
   .hamburger {

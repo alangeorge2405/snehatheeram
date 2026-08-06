@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import HeroBanner from "@/components/HeroBanner";
+import NewVenturePopup from "@/components/NewVenturePopup";
 
 export default function Home() {
   return (
@@ -10,16 +11,16 @@ export default function Home() {
       <section className={`${styles.hero} animate-fade-in`}>
         <div className={`${styles.heroContainer} container`}>
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Aluva, Kerala</span>
-            <h1 className={styles.heroTitle}>A Shore of Love, Care & Dignity</h1>
+            <div className={styles.badgeContainer}>
+              <span className={styles.badgeTextBrand}>Snehatheeram</span>
+              <span className={styles.badgeTextSub}>a unit of Sneha Charitable Trust®</span>
+            </div>
+            <h1 className={styles.heroTitle}>A Shore of Love, Care &amp; Dignity</h1>
             <p className={styles.heroSubtitle}>
-              Snehatheeram (&quot;A Shore of Love&quot;) is a sanctuary dedicated to providing shelter, 24/7 medical care, emotional counseling, and rehabilitation to the elderly, destitute, and individuals living with HIV/AIDS.
+              Snehatheeram – A Shore of Love is a 24-hour residential healthcare facility providing comprehensive medical and psychosocial services to vulnerable populations, including older adults, individuals without adequate social support, and people living with HIV/AIDS (PLHIV).
             </p>
             <div className={styles.heroCtas}>
-              <Link href="/donate" className="btn btn-primary">
-                Support Our Mission
-              </Link>
-              <Link href="/services" className="btn btn-outline">
+              <Link href="/services" className="btn btn-primary">
                 Our Care Programs
               </Link>
             </div>
@@ -35,16 +36,16 @@ export default function Home() {
         <div className={`${styles.missionContent} container`}>
           <div className={styles.crestIcon}>
             <Image
-              src="/images/camillus_crest.jpg"
-              alt="Camillian Cross Crest"
-              width={60}
-              height={60}
+              src="/images/snehatheeram_logo.png"
+              alt="Snehatheeram Logo"
+              width={160}
+              height={107}
             />
           </div>
           <span className={styles.sectionSubtitle}>Who We Are</span>
           <h2 className={styles.sectionTitle}>Restoring Hope & Well-being</h2>
           <p className={styles.missionText}>
-            Established in 2004 under the **Sneha Charitable Trust**, Snehatheeram embodies the mission of the **Camillian Order** in India. Our sanctuary serves as a safe haven where the sick, terminally ill, and destitute find not just clinical care, but a family. Guided by the values of compassionate service, we aim to eliminate social stigma and ensure every individual lives their life in comfort and dignity.
+            Established in 2004 under the <strong>Sneha Charitable Trust</strong>, Snehatheeram embodies the mission of the <strong>Camillian Order</strong> in India. Our sanctuary serves as a safe haven where the sick, terminally ill, and destitute find not just clinical care, but a family. Guided by the values of compassionate service, we aim to eliminate social stigma and ensure every individual lives their life in comfort and dignity.
           </p>
           <Link href="/about" className="btn btn-secondary" style={{ marginTop: "12px" }}>
             Read Our History
@@ -55,14 +56,25 @@ export default function Home() {
       {/* Charism Section */}
       <section className={`${styles.charismSection} section`}>
         <div className={`${styles.gridTwoCol} container`}>
-          <div className={styles.imageCard}>
-            <Image
-              src="/images/st_camillus.png"
-              alt="Portrait of St. Camillus de Lellis"
-              width={600}
-              height={450}
-              className={styles.cardImg}
-            />
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            <div className={styles.imageCard}>
+              <Image
+                src="/images/st_camillus.jpeg"
+                alt="Portrait of St. Camillus de Lellis"
+                width={600}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "var(--border-radius-md)", border: "1px solid var(--border-color)", boxShadow: "var(--shadow-sm)" }}>
+              <iframe
+                src="https://www.youtube.com/embed/uioFKI7PqCI"
+                title="Saint Camillus de Lellis Video"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <div className={styles.charismBox}>
             <span className={styles.sectionSubtitle} style={{ textAlign: "left", display: "block" }}>The Camillian Charism</span>
@@ -92,16 +104,12 @@ export default function Home() {
               <div className={styles.statLabel}>Years of Loving Service</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>150+</div>
+              <div className={styles.statNumber}>1000+</div>
               <div className={styles.statLabel}>Residents Cared For</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>500+</div>
+              <div className={styles.statNumber}>3000+</div>
               <div className={styles.statLabel}>Outreach Palliative Families</div>
-            </div>
-            <div className={styles.statCard}>
-              <div className={styles.statNumber}>24/7</div>
-              <div className={styles.statLabel}>Medical & Nursing Care</div>
             </div>
           </div>
         </div>
@@ -115,19 +123,7 @@ export default function Home() {
             <h2 className={styles.sectionTitle}>Our Core Pillars of Care</h2>
           </div>
           <div className={styles.pillarsGrid}>
-            {/* Pillar 1 */}
-            <div className={styles.pillarCard}>
-              <div className={styles.pillarIconContainer}>❤</div>
-              <h3 className={styles.pillarTitle}>Elderly & Destitute Care</h3>
-              <p className={styles.pillarDescription}>
-                We provide a warm residential shelter, highly nutritious food, personal grooming, laundry services, and regular social activities for elderly individuals who have been abandoned or are destitute.
-              </p>
-              <Link href="/services#elderly" className={styles.pillarLink}>
-                Learn More <span>→</span>
-              </Link>
-            </div>
-
-            {/* Pillar 2 */}
+            {/* Pillar 3: PLHIV Support */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>✚</div>
               <h3 className={styles.pillarTitle}>PLHIV Support & Rehabilitation</h3>
@@ -137,9 +133,25 @@ export default function Home() {
               <Link href="/services#plhiv" className={styles.pillarLink}>
                 Learn More <span>→</span>
               </Link>
-            </div>
+            </div> 
+            {/* Pillar 2: Elderly Care */}
+            <div className={styles.pillarCard}>
+              <div className={styles.pillarIconContainer}>❤</div>
+              <h3 className={styles.pillarTitle}>Elderly & Destitute Care</h3>
+              <p className={styles.pillarDescription}>
+                We provide a warm residential shelter, highly nutritious food, personal grooming, laundry services, and regular social activities for elderly individuals who have been abandoned or are destitute.
+              </p>
+              <Link href="/services#elderly" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>                       
 
-            {/* Pillar 3 */}
+
+
+
+
+
+            {/* Pillar 4: NANMA Outreach */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>🤝</div>
               <h3 className={styles.pillarTitle}>&quot;NANMA&quot; Outreach Program</h3>
@@ -151,7 +163,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Pillar 4 */}
+            {/* Pillar 5: Counseling */}
             <div className={styles.pillarCard}>
               <div className={styles.pillarIconContainer}>🗣</div>
               <h3 className={styles.pillarTitle}>Psychological Counseling</h3>
@@ -162,6 +174,29 @@ export default function Home() {
                 Learn More <span>→</span>
               </Link>
             </div>
+
+            {/* Pillar 6: Ambulance Services */}
+            <div className={styles.pillarCard}>
+              <div className={styles.pillarIconContainer}>🚑</div>
+              <h3 className={styles.pillarTitle}>Ambulance Services</h3>
+              <p className={styles.pillarDescription}>
+                We run a dedicated ambulance service providing safe, urgent, and routine patient transit to regional hospitals for residents and home care patients.
+              </p>
+              <Link href="/services#ambulance" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>
+            {/* Pillar 1: Hair Donation */}
+            <div className={styles.pillarCard}>
+              <div className={styles.pillarIconContainer}>✂</div>
+              <h3 className={styles.pillarTitle}>Hair Donation</h3>
+              <p className={styles.pillarDescription}>
+                Are you interested in donating hair? In collaboration with Amala Hospital, Thrissur, Snehatheeram collects hair donations in Aluva to craft natural wigs for cancer patients.
+              </p>
+              <Link href="/services#hair-donation" className={styles.pillarLink}>
+                Learn More <span>→</span>
+              </Link>
+            </div>            
           </div>
         </div>
       </section>
@@ -183,6 +218,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <NewVenturePopup />
     </div>
   );
 }

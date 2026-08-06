@@ -9,7 +9,7 @@ export default function About() {
         <div className="container">
           <h1 className={styles.title}>About Snehatheeram</h1>
           <p className={styles.subtitle}>
-            A testament to extreme charity, loving kindness, and the preservation of human dignity in Aluva, Kerala.
+            A testament to compassionate service, loving kindness, and the preservation of human dignity in Aluva, Kerala.
           </p>
         </div>
       </section>
@@ -21,13 +21,12 @@ export default function About() {
             <span className={styles.sectionLabel}>Our Roots</span>
             <h2 className={styles.sectionTitle}>The Story of Snehatheeram</h2>
             <p className={styles.paragraph}>
-              Snehatheeram, which translates to <strong>&quot;A Shore of Love&quot;</strong>, was founded in 2004 in West Kadungalloor, Aluva. It was established by the <strong>Sneha Charitable Trust</strong>, a healthcare initiative created by the <strong>Camillians</strong> (Order of the Ministers of the Infirm) in India.
+              Snehatheeram – A Shore of Love – was founded in 2004 at West Kadungalloor, Aluva, by the Sneha Charitable Trust, a healthcare initiative of the Camillians (Order of the Ministers of the Infirm) in India.            </p>
+            <p className={styles.paragraph}>
+              Initially, Snehatheeram was established as a care and support centre for People Living with HIV/AIDS (PLHIV). At a time when HIV/AIDS was associated with considerable social stigma, many infected and affected individuals faced rejection and abandonment by their families and communities. Snehatheeram provided a safe and supportive environment, offering shelter, nutritious food, medical care, professional counselling, and comprehensive palliative care.
             </p>
             <p className={styles.paragraph}>
-              Originally, Snehatheeram was established specifically as a care and support center for People Living with HIV/AIDS (PLHIV). In 2004, HIV was accompanied by severe social stigma, causing many sufferers to be rejected by their families and communities. Snehatheeram stepped in to offer a safe shelter, nutritious food, professional counseling, and comprehensive palliative medical treatments.
-            </p>
-            <p className={styles.paragraph}>
-              As the medical landscape of HIV treatment evolved with antiretroviral therapy (ART) and social stigma began to ease, Snehatheeram opened its doors to a broader population in need. Today, it operates as a full-fledged care facility offering housing, healthcare, and dignified lives to the elderly destitute, abandoned individuals, and terminally ill patients.
+              With the free availability of antiretroviral therapy (ART), the expansion of community-based care, and the gradual reduction of stigma surrounding HIV/AIDS, Snehatheeram expanded its services to meet the needs of other vulnerable groups. Today, it is a comprehensive care facility providing residential care, healthcare, and dignified living for elderly persons without support, abandoned individuals, and those living with terminal illnesses.
             </p>
           </div>
           <div className={styles.imageCard}>
@@ -45,14 +44,25 @@ export default function About() {
       {/* Charism section */}
       <section className={`${styles.charismSection} section`}>
         <div className={`${styles.gridTwoCol} container`}>
-          <div className={styles.imageCard}>
-            <Image
-              src="/images/st_camillus.png"
-              alt="Portrait of St. Camillus de Lellis"
-              width={600}
-              height={450}
-              className={styles.cardImg}
-            />
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+            <div className={styles.imageCard}>
+              <Image
+                src="/images/st_camillus.jpeg"
+                alt="Portrait of St. Camillus de Lellis"
+                width={600}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "var(--border-radius-md)", border: "1px solid var(--border-color)", boxShadow: "var(--shadow-sm)" }}>
+              <iframe
+                src="https://www.youtube.com/embed/uioFKI7PqCI"
+                title="Saint Camillus de Lellis Video"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <div className={styles.charismBox}>
             <span className={styles.sectionLabel}>The Camillian Charism</span>
@@ -99,7 +109,7 @@ export default function About() {
               <div className={styles.valueIcon}>🤝</div>
               <h3 className={styles.valueTitle}>Inclusivity</h3>
               <p className={styles.valueDescription}>
-                Opening our doors to the most marginalized, forgotten, andstigmatized members of our society.
+                Opening our doors to the most marginalized, forgotten, and stigmatized members of our society.
               </p>
             </div>
             <div className={styles.valueCard}>
@@ -107,6 +117,13 @@ export default function About() {
               <h3 className={styles.valueTitle}>Integrity</h3>
               <p className={styles.valueDescription}>
                 Running all our care homes, programs, and donation allocations with the highest ethical and transparent standards.
+              </p>
+            </div>
+            <div className={styles.valueCard}>
+              <div className={styles.valueIcon}>🩺</div>
+              <h3 className={styles.valueTitle}>Quality Care</h3>
+              <p className={styles.valueDescription}>
+                Delivering round-the-clock professional medical support, patient-centered therapies and healthy nutrition tailored to each resident.
               </p>
             </div>
           </div>
@@ -117,8 +134,8 @@ export default function About() {
       <section className={`${styles.leadershipSection} section`}>
         <div className="container">
           <div className={styles.sectionTitleContainer}>
-            <span className={styles.sectionLabel}>Our Guardians</span>
-            <h2 className={styles.sectionTitle}>Trustees & Leadership</h2>
+            <span className={styles.sectionLabel}>Camillian Community</span>
+            <h2 className={styles.sectionTitle}>Leadership & Community Fathers</h2>
             <p className={styles.paragraph} style={{ maxWidth: "600px", margin: "12px auto 0", textAlign: "center" }}>
               Snehatheeram is guided by the Camillian Fathers, who coordinate clinical, spiritual, and physical care networks.
             </p>
@@ -128,19 +145,16 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_antony.png"
-                  alt="Fr. Antony Kunnel MI"
+                  src="/images/fr_teji.jpeg"
+                  alt="Fr. Teji Thomas Anickattuvayalil MI"
                   width={400}
-                  height={250}
+                  height={450}
                   className={styles.teamImg}
                 />
               </div>
               <div className={styles.teamMeta}>
-                <h3 className={styles.teamName}>Fr. Antony Kunnel MI</h3>
-                <span className={styles.teamRole}>Provincial & Trustee</span>
-                <p className={styles.teamBio}>
-                  Oversees the strategic directions, administrative guidelines, and spiritual coordinates of the Camillian Order ministries across India.
-                </p>
+                <h3 className={styles.teamName}>Fr. Teji Thomas Anickattuvayalil MI</h3>
+                <span className={styles.teamRole}>Director, Snehatheeram</span>
               </div>
             </div>
 
@@ -148,19 +162,56 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.teamImgWrapper}>
                 <Image
-                  src="/images/fr_joy.png"
-                  alt="Fr. Joy Joseph MI"
+                  src="/images/fr_vince.jpeg"
+                  alt="Fr. Vince Koyikkal MI"
                   width={400}
-                  height={250}
+                  height={450}
                   className={styles.teamImg}
                 />
               </div>
               <div className={styles.teamMeta}>
-                <h3 className={styles.teamName}>Fr. Joy Joseph MI</h3>
-                <span className={styles.teamRole}>Director & Administrator</span>
-                <p className={styles.teamBio}>
-                  Manages the day-to-day administrative execution, residential assignments, and medical supplies network for Snehatheeram Aluva.
-                </p>
+                <h3 className={styles.teamName}>Fr. Vince Koyikkal MI</h3>
+                <span className={styles.teamRole}>Administrator, Snehatheeram</span>
+              </div>
+            </div>
+
+            {/* Trustee 3 */}
+            <div className={styles.teamCard}>
+              <div className={styles.teamImgWrapper}>
+                <Image
+                  src="/images/fr_jobin_v2.jpeg"
+                  alt="Dr. (Fr.) Jobin Anchupankil MI"
+                  width={400}
+                  height={450}
+                  className={styles.teamImg}
+                />
+              </div>
+              <div className={styles.teamMeta}>
+                <h3 className={styles.teamName}>Dr. (Fr.) Jobin Anchupankil MI</h3>
+                <span className={styles.teamRole}>
+                  Consultant Doctor — Community Health Medicine,<br />
+                  Jubilee Mission Hospital, Thrissur
+                </span>
+              </div>
+            </div>
+
+            {/* Trustee 4 */}
+            <div className={styles.teamCard}>
+              <div className={styles.teamImgWrapper}>
+                <Image
+                  src="/images/fr_justin.jpeg"
+                  alt="Fr. Justin Kalarpara MI"
+                  width={400}
+                  height={450}
+                  className={styles.teamImg}
+                />
+              </div>
+              <div className={styles.teamMeta}>
+                <h3 className={styles.teamName}>Fr. Justin Kalarpara MI</h3>
+                <span className={styles.teamRole}>
+                  Asst. Vicar,<br />
+                  St. Thomas Cathedral, Irinjalakuda
+                </span>
               </div>
             </div>
           </div>

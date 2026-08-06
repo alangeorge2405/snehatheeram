@@ -257,3 +257,16 @@
   line-height: 1.6;
   font-size: 0.95rem;
 }
+
+.socialLink {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.socialLink:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
